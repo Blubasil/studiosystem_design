@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AI Assisted Software | AI-Native Development Solutions",
+  title: "Studio System | AI-Native Software Development",
   description:
     "Transform your software development with AI-native technologies. From legacy CMS migration to full SDLC automation with Vibe Engineering and Agentic Programming.",
   generator: "v0.app",

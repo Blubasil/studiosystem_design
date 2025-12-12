@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Sparkles } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,10 +13,9 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-foreground rounded-lg flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-background" />
-            </div>
-            <span className="font-semibold text-lg text-foreground">AI Assisted Software</span>
+            <span className="font-bold text-xl tracking-tight text-foreground">
+              Studio <span className="text-muted-foreground">System</span>
+            </span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
