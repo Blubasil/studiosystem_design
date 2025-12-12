@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
 export function Header() {
@@ -33,13 +32,6 @@ export function Header() {
             </Link>
           </nav>
 
-          <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" className="text-foreground">
-              Get a Demo
-            </Button>
-            <Button className="bg-foreground text-background hover:bg-foreground/90">Start Project</Button>
-          </div>
-
           <button className="md:hidden p-2 text-foreground" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -60,12 +52,6 @@ export function Header() {
               <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact
               </Link>
-              <div className="flex flex-col gap-2 pt-4">
-                <Button variant="ghost" className="w-full text-foreground">
-                  Get a Demo
-                </Button>
-                <Button className="w-full bg-foreground text-background hover:bg-foreground/90">Start Project</Button>
-              </div>
             </nav>
           </div>
         )}

@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Code2, Cpu, Workflow } from "lucide-react"
+import { Code2, Cpu, Workflow } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -17,24 +16,10 @@ export function HeroSection() {
             <span className="text-muted-foreground">Faster with AI</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-pretty">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-16 text-pretty">
             Transform your development workflow with AI-assisted technologies across every phase of the SDLC. Higher
             quality, faster delivery, more value.
           </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90 px-8">
-              Get Started
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-border text-foreground hover:bg-secondary px-8 bg-transparent"
-            >
-              Watch Demo
-            </Button>
-          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
             <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-secondary/50 border border-border">
