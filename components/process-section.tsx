@@ -1,33 +1,35 @@
+"use client"
+
 import { Target, Search, Code, Rocket } from "lucide-react"
+import { useLanguage } from "@/lib/i18n/context"
 
 export function ProcessSection() {
+  const { t } = useLanguage()
+
   const steps = [
     {
       icon: Target,
       step: "01",
-      title: "AI-Assisted Business Goals",
-      description:
-        "We analyze your objectives with AI to define clear, measurable outcomes aligned with your business strategy.",
+      title: t.process.step1.title,
+      description: t.process.step1.description,
     },
     {
       icon: Search,
       step: "02",
-      title: "Scope from Goals",
-      description:
-        "AI transforms your goals into detailed technical specifications, ensuring nothing gets lost in translation.",
+      title: t.process.step2.title,
+      description: t.process.step2.description,
     },
     {
       icon: Code,
       step: "03",
-      title: "AI-Native Development",
-      description:
-        "Our agentic programming approach delivers production-ready code at unprecedented speed and quality.",
+      title: t.process.step3.title,
+      description: t.process.step3.description,
     },
     {
       icon: Rocket,
       step: "04",
-      title: "Deploy & Iterate",
-      description: "Continuous delivery with AI-powered monitoring ensures your software evolves with your business.",
+      title: t.process.step4.title,
+      description: t.process.step4.description,
     },
   ]
 
@@ -35,9 +37,9 @@ export function ProcessSection() {
     <section id="process" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">AI in Every Phase</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">{t.process.title}</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From initial concept to production deployment, AI enhances every step of your development journey
+            {t.process.description}
           </p>
         </div>
 

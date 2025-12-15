@@ -1,9 +1,15 @@
+"use client"
+
+import { useLanguage } from "@/lib/i18n/context"
+
 export function StatsSection() {
+  const { t } = useLanguage()
+
   const stats = [
-    { value: "10x", label: "Faster Development", description: "Accelerate time to market" },
-    { value: "85%", label: "Less Manual Code", description: "AI-generated quality code" },
-    { value: "99%", label: "Test Coverage", description: "Automated testing at scale" },
-    { value: "50%", label: "Cost Reduction", description: "Optimized resources" },
+    t.stats.stat1,
+    t.stats.stat2,
+    t.stats.stat3,
+    t.stats.stat4,
   ]
 
   return (

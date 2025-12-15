@@ -1,7 +1,12 @@
+"use client"
+
 import Link from "next/link"
 import { MapPin } from "lucide-react"
+import { useLanguage } from "@/lib/i18n/context"
 
 export function Footer() {
+  const { t } = useLanguage()
+
   return (
     <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
       <div className="max-w-7xl mx-auto">
@@ -13,8 +18,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground max-w-sm mb-4">
-              Transforming software development with AI-native technologies. Higher quality, faster delivery, more
-              value.
+              {t.footer.description}
             </p>
             <div className="flex items-start gap-2 text-muted-foreground">
               <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
@@ -23,52 +27,52 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Services</h4>
+            <h4 className="font-semibold text-foreground mb-4">{t.footer.servicesTitle}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  AI-First Development
+                  {t.footer.aiFirstDev}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Legacy Migration
+                  {t.footer.legacyMigration}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Vibe Engineering
+                  {t.footer.vibeEngineering}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Agentic Programming
+                  {t.footer.agenticProgramming}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Company</h4>
+            <h4 className="font-semibold text-foreground mb-4">{t.footer.companyTitle}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  About
+                  {t.footer.about}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Careers
+                  {t.footer.careers}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
+                  {t.footer.contact}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Blog
+                  {t.footer.blog}
                 </Link>
               </li>
             </ul>
@@ -76,13 +80,13 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 Studio System. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">{t.footer.copyright}</p>
           <div className="flex items-center gap-6">
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Privacy
+              {t.footer.privacy}
             </Link>
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Terms
+              {t.footer.terms}
             </Link>
           </div>
         </div>

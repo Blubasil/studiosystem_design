@@ -1,30 +1,31 @@
+"use client"
+
 import { Zap, RefreshCw, Shield, Layers } from "lucide-react"
+import { useLanguage } from "@/lib/i18n/context"
 
 export function ServicesSection() {
+  const { t } = useLanguage()
+
   const services = [
     {
       icon: RefreshCw,
-      title: "Legacy System Modernization",
-      description:
-        "Replace your old, slow CMS with state-of-the-art technology. We migrate your data while building from scratch with modern architecture.",
+      title: t.services.service1.title,
+      description: t.services.service1.description,
     },
     {
       icon: Zap,
-      title: "AI-First Development",
-      description:
-        "Every line of code benefits from AI assistance. From business analysis to deployment, AI accelerates and improves every phase.",
+      title: t.services.service2.title,
+      description: t.services.service2.description,
     },
     {
       icon: Layers,
-      title: "Vibe Engineering",
-      description:
-        "Natural language-driven development that translates your vision into working software faster than ever before.",
+      title: t.services.service3.title,
+      description: t.services.service3.description,
     },
     {
       icon: Shield,
-      title: "Agentic Programming",
-      description:
-        "Autonomous AI agents that write, test, and deploy code while maintaining quality standards and security protocols.",
+      title: t.services.service4.title,
+      description: t.services.service4.description,
     },
   ]
 
@@ -32,9 +33,9 @@ export function ServicesSection() {
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">AI-Powered Services</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">{t.services.title}</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Comprehensive solutions that leverage AI across the entire software development lifecycle
+            {t.services.description}
           </p>
         </div>
 
