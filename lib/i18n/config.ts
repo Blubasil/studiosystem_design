@@ -12,3 +12,5 @@ export const i18nConfig = {
   /** Default language when i18n is disabled or for first-time visitors */
   DEFAULT_LANGUAGE: "en" as const,
 }
+
+

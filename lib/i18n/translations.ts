@@ -16,8 +16,8 @@ export const translations = {
       description:
         "Our company integrates AI-assisted technologies into every phase of the software process to improve quality, speed, and value delivery.",
       feature1: "AI-Native Development",
-      feature2: "Agentic Programming",
-      feature3: "Vibe Engineering",
+      feature2: "AI That Codes",
+      feature3: "Natural Language Dev",
     },
 
     // Stats Section
@@ -35,22 +35,22 @@ export const translations = {
       service1: {
         title: "Legacy System Modernization",
         description:
-          "Replace your old, slow existing platform with state-of-the-art technology. We migrate your data while building from scratch with modern architecture.",
+          "Stuck with outdated technology? We modernize your systems — from targeted updates to full rebuilds — so your software keeps pace with your business.",
       },
       service2: {
-        title: "AI-First Development",
+        title: "Custom Software Development",
         description:
-          "Every line of code benefits from AI assistance. From business analysis to deployment, AI accelerates and improves every phase.",
+          "From idea to production — we design and build custom software tailored to your business needs, powered by AI-native methods.",
       },
       service3: {
-        title: "Vibe Engineering",
+        title: "Rapid Prototyping",
         description:
-          "Natural language-driven development that translates your vision into working software faster than ever before.",
+          "Test your ideas fast. We turn your vision into a working prototype in days, not months — so you can validate before you invest.",
       },
       service4: {
-        title: "Agentic Programming",
+        title: "Ongoing Development & Support",
         description:
-          "Autonomous AI agents that write, test, and deploy code while maintaining quality standards and security protocols.",
+          "Your software evolves with your business. Continuous improvements, new features, and reliable support — we're your long-term development partner.",
       },
     },
 
@@ -110,9 +110,9 @@ export const translations = {
 
     // CTA Section
     cta: {
-      title: "Ready to Transform Your Development?",
+      title: "Ready to Work with AI-Native Experts?",
       description:
-        "Join forward-thinking companies that are already building better software faster with AI-native development.",
+        "Partner with the team that builds better software faster. Your competitors aren't waiting.",
     },
 
     // Footer
@@ -120,10 +120,10 @@ export const translations = {
       description:
         "Transforming software development with AI-native technologies. Higher quality, faster delivery, more value.",
       servicesTitle: "Services",
-      aiFirstDev: "AI-First Development",
-      legacyMigration: "Legacy Migration",
-      vibeEngineering: "Vibe Engineering",
-      agenticProgramming: "Agentic Programming",
+      legacyModernization: "Legacy Modernization",
+      customDev: "Custom Development",
+      prototyping: "Rapid Prototyping",
+      ongoingSupport: "Ongoing Support",
       companyTitle: "Company",
       about: "About",
       careers: "Careers",
@@ -152,8 +152,8 @@ export const translations = {
       description:
         "Trasforma il tuo flusso di sviluppo con tecnologie assistite dall'AI in ogni fase del ciclo di vita del software. Qualità superiore, consegne più rapide, più valore.",
       feature1: "Sviluppo AI-Native",
-      feature2: "Programmazione Agentica",
-      feature3: "Vibe Engineering",
+      feature2: "AI Che Programma",
+      feature3: "Linguaggio Naturale",
     },
 
     // Stats Section
@@ -172,22 +172,22 @@ export const translations = {
       service1: {
         title: "Modernizzazione Sistemi Legacy",
         description:
-          "Sostituisci il tuo vecchio e lento CMS con tecnologia all'avanguardia. Migriamo i tuoi dati mentre ricostruiamo da zero con un'architettura moderna.",
+          "Bloccato con tecnologia obsoleta? Modernizziamo i tuoi sistemi — da aggiornamenti mirati a ricostruzioni complete — così il tuo software resta al passo con il tuo business.",
       },
       service2: {
-        title: "Sviluppo AI-First",
+        title: "Sviluppo Software Personalizzato",
         description:
-          "Ogni riga di codice beneficia dell'assistenza AI. Dall'analisi di business al deployment, l'AI accelera e migliora ogni fase.",
+          "Dall'idea alla produzione — progettiamo e costruiamo software su misura per le tue esigenze aziendali, con metodi AI-native.",
       },
       service3: {
-        title: "Vibe Engineering",
+        title: "Prototipazione Rapida",
         description:
-          "Sviluppo guidato dal linguaggio naturale che traduce la tua visione in software funzionante più velocemente che mai.",
+          "Testa le tue idee velocemente. Trasformiamo la tua visione in un prototipo funzionante in giorni, non mesi — così puoi validare prima di investire.",
       },
       service4: {
-        title: "Programmazione Agentica",
+        title: "Sviluppo Continuo e Supporto",
         description:
-          "Agenti AI autonomi che scrivono, testano e distribuiscono codice mantenendo standard di qualità e protocolli di sicurezza.",
+          "Il tuo software evolve con il tuo business. Miglioramenti continui, nuove funzionalità e supporto affidabile — siamo il tuo partner di sviluppo a lungo termine.",
       },
     },
 
@@ -250,9 +250,9 @@ export const translations = {
 
     // CTA Section
     cta: {
-      title: "Pronto a Trasformare il Tuo Sviluppo?",
+      title: "Pronto a Lavorare con Esperti AI-Native?",
       description:
-        "Unisciti alle aziende lungimiranti che stanno già costruendo software migliore e più velocemente con lo sviluppo AI-native.",
+        "Collabora con il team che costruisce software migliore, più velocemente. I tuoi competitor non stanno aspettando.",
     },
 
     // Footer
@@ -260,10 +260,10 @@ export const translations = {
       description:
         "Trasformiamo lo sviluppo software con tecnologie AI-native. Qualità superiore, consegne più rapide, più valore.",
       servicesTitle: "Servizi",
-      aiFirstDev: "Sviluppo AI-First",
-      legacyMigration: "Migrazione Legacy",
-      vibeEngineering: "Vibe Engineering",
-      agenticProgramming: "Programmazione Agentica",
+      legacyModernization: "Modernizzazione Legacy",
+      customDev: "Sviluppo Personalizzato",
+      prototyping: "Prototipazione Rapida",
+      ongoingSupport: "Supporto Continuo",
       companyTitle: "Azienda",
       about: "Chi Siamo",
       careers: "Lavora con Noi",
@@ -278,6 +278,8 @@ export const translations = {
 
 export type Language = keyof typeof translations
 export type Translations = typeof translations.en
+
+
 
 
 
