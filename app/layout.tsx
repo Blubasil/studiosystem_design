@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/lib/i18n/context"
+import { JsonLd } from "@/components/json-ld"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -11,8 +12,20 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Studio System | AI-Native Software Development",
   description:
-    "Transform your software development with AI-native technologies. From legacy system modernization to full SDLC automation with Natural Language Development and AI that codes for you.",
-  generator: "v0.app",
+    "Struggling with slow delivery and legacy systems? Our AI-native approach modernizes your stack and accelerates development. Book a free strategy call.",
+  metadataBase: new URL("https://www.studiosystem.io"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Studio System | AI-Native Software Development",
+    description:
+      "Struggling with slow delivery and legacy systems? Our AI-native approach modernizes your stack and accelerates development.",
+    url: "https://www.studiosystem.io",
+    siteName: "Studio System",
+    locale: "en_US",
+    type: "website",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
@@ -35,6 +48,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <JsonLd />
+      </head>
       <body className={`font-sans antialiased`}>
         <LanguageProvider>
           {children}
