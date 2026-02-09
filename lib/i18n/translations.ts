@@ -3,8 +3,8 @@ export const translations = {
     // Header
     header: {
       services: "Services",
-      process: "Process",
-      features: "Features",
+      process: "How It Works",
+      features: "Why Us",
       contact: "Contact",
     },
 
@@ -22,42 +22,42 @@ export const translations = {
 
     // Stats Section
     stats: {
-      stat1: { value: "2x", label: "Faster Delivery", description: "Accelerate time to market" },
-      stat2: { value: "↑", label: "Higher Quality", description: "Fewer defects in production" },
-      stat3: { value: "3x", label: "More Options", description: "Explore multiple solutions at once" },
-      stat4: { value: "↓", label: "Cost Reduction", description: "Efficient by design" },
+      stat1: { value: "2x", label: "Faster Results", description: "Your project delivered in half the time, so you can start growing sooner" },
+      stat2: { value: "↑", label: "Better Quality", description: "Reliable software that works smoothly from day one, fewer headaches for you" },
+      stat3: { value: "3x", label: "More Options", description: "We show you multiple solutions so you can choose what fits your business best" },
+      stat4: { value: "↓", label: "Lower Costs", description: "Smart technology means less manual work and more savings passed on to you" },
     },
 
     // Services Section
     services: {
-      title: "AI-Powered Services",
-      description: "Comprehensive solutions that leverage AI across the entire software development lifecycle",
+      title: "What We Do",
+      description: "Simple solutions for real business problems. No tech jargon, just results.",
       service1: {
-        title: "Legacy System Modernization",
+        title: "Update Old Systems",
         description:
-          "Stuck with outdated technology? We modernize your systems — from targeted updates to full rebuilds — so your software keeps pace with your business.",
+          "Is your software slow or outdated? We modernize it so it works better, without disrupting your daily operations.",
       },
       service2: {
-        title: "Custom Software Development",
+        title: "Custom Software",
         description:
-          "From idea to production — we design and build custom software tailored to your business needs, powered by AI-native methods.",
+          "Need something specific for your business? We build exactly what you need — from apps to management systems.",
       },
       service3: {
-        title: "Rapid Prototyping",
+        title: "Test Your Idea First",
         description:
-          "Test your ideas fast. We turn your vision into a working prototype in days, not months — so you can validate before you invest.",
+          "Not sure if your idea will work? We create a working demo in days so you can try it before investing more.",
       },
       service4: {
-        title: "Ongoing Development & Support",
+        title: "Ongoing Support",
         description:
-          "Your software evolves with your business. Continuous improvements, new features, and reliable support — we're your long-term development partner.",
+          "We don't disappear after delivery. Updates, improvements, and help when you need it — we're here for the long run.",
       },
     },
 
     // Process Section
     process: {
-      title: "AI in Every Phase",
-      description: "From initial concept to production deployment, AI enhances every step of your development journey",
+      title: "How We Work",
+      description: "A simple process that keeps you informed at every step. No surprises.",
       step1: {
         title: "AI-Assisted Business Goals",
         description:
@@ -80,50 +80,51 @@ export const translations = {
 
     // Features Section
     features: {
-      title: "The AI Advantage",
-      description: "State-of-the-art capabilities that set your software apart",
+      title: "Why Choose Us",
+      description: "Real advantages that make a difference for your business",
       feature1: {
-        title: "Autonomous Agents",
-        description: "AI agents that understand context and make intelligent decisions throughout development.",
+        title: "Smart Automation",
+        description: "We use advanced tools to work faster, so you get results sooner without sacrificing quality.",
       },
       feature2: {
-        title: "Real-Time Quality",
-        description: "Continuous quality assessment and automated fixes before issues reach production.",
+        title: "Quality Guaranteed",
+        description: "We test everything thoroughly before delivery. Your software works reliably from day one.",
       },
       feature3: {
-        title: "Security First",
-        description: "AI-powered security scanning and compliance checking built into every workflow.",
+        title: "Secure & Protected",
+        description: "Your data and your customers' data stay safe. Security is built in, not added later.",
       },
       feature4: {
-        title: "Seamless Migration",
-        description: "Preserve your data while completely rebuilding with modern, scalable architecture.",
+        title: "Easy Transitions",
+        description: "Switching from old software? We move your data safely and train your team on the new system.",
       },
       feature5: {
-        title: "Natural Language",
-        description: "Describe what you want in plain language and watch AI translate it into working code.",
+        title: "You Stay in Control",
+        description: "No confusing tech talk. We explain everything clearly and you make the decisions.",
       },
       feature6: {
-        title: "Human + AI Teams",
-        description: "The perfect collaboration between human creativity and AI efficiency.",
+        title: "Real People, Real Support",
+        description: "Work directly with our team. We answer your calls and solve problems quickly.",
       },
     },
 
     // CTA Section
     cta: {
-      title: "Ready to Work with AI-Native Experts?",
+      title: "Ready to Get Started?",
       description:
-        "Partner with the team that builds better software faster. Your competitors aren't waiting.",
+        "Tell us about your project. We'll give you an honest assessment and a clear quote — no obligations.",
+      button: "Let's Talk",
     },
 
     // Footer
     footer: {
       description:
-        "Transforming software development with AI-native technologies. Higher quality, faster delivery, more value.",
+        "Custom software for growing businesses. Simple process, fair prices, real results.",
       servicesTitle: "Services",
-      legacyModernization: "Legacy Modernization",
-      customDev: "Custom Development",
-      prototyping: "Rapid Prototyping",
-      ongoingSupport: "Ongoing Support",
+      legacyModernization: "System Updates",
+      customDev: "Custom Software",
+      prototyping: "Quick Demos",
+      ongoingSupport: "Support",
       companyTitle: "Company",
       about: "About",
       careers: "Careers",
@@ -139,18 +140,18 @@ export const translations = {
     // Header
     header: {
       services: "Servizi",
-      process: "Processo",
-      features: "Funzionalità",
+      process: "Come Funziona",
+      features: "Perché Noi",
       contact: "Contatti",
     },
 
     // Hero Section
     hero: {
       badge: "Sviluppo Software AI-Native",
-      title1: "Sviluppa Software Migliore",
+      title1: "Sviluppiamo Software Migliore",
       title2: "Più Velocemente con l'AI",
       description:
-        "Trasforma il tuo flusso di sviluppo con tecnologie assistite dall'AI in ogni fase del ciclo di vita del software. Qualità superiore, consegne più rapide, più valore.",
+        "La nostra azienda integra tecnologie assistite dall'AI in ogni fase del processo software per migliorare qualità, velocità e valore.",
       feature1: "Sviluppo AI-Native",
       feature2: "AI Che Programma",
       feature3: "Linguaggio Naturale",
@@ -158,46 +159,44 @@ export const translations = {
 
     // Stats Section
     stats: {
-      stat1: { value: "10x", label: "Sviluppo Più Veloce", description: "Accelera il time to market" },
-      stat2: { value: "85%", label: "Meno Codice Manuale", description: "Codice di qualità generato dall'AI" },
-      stat3: { value: "99%", label: "Copertura Test", description: "Testing automatizzato su scala" },
-      stat4: { value: "50%", label: "Riduzione Costi", description: "Risorse ottimizzate" },
+      stat1: { value: "2x", label: "Più Veloce", description: "Il tuo progetto consegnato in metà tempo, così puoi iniziare a crescere prima" },
+      stat2: { value: "↑", label: "Più Qualità", description: "Software affidabile che funziona dal primo giorno, meno grattacapi per te" },
+      stat3: { value: "3x", label: "Più Opzioni", description: "Ti mostriamo più soluzioni così scegli quella giusta per la tua azienda" },
+      stat4: { value: "↓", label: "Meno Costi", description: "Tecnologia smart significa meno lavoro manuale e più risparmi per te" },
     },
 
     // Services Section
     services: {
-      title: "Servizi Potenziati dall'AI",
-      description:
-        "Soluzioni complete che sfruttano l'AI in tutto il ciclo di vita dello sviluppo software",
+      title: "Cosa Facciamo",
+      description: "Soluzioni semplici per problemi reali. Niente gergo tecnico, solo risultati.",
       service1: {
-        title: "Modernizzazione Sistemi Legacy",
+        title: "Aggiorniamo i Vecchi Sistemi",
         description:
-          "Bloccato con tecnologia obsoleta? Modernizziamo i tuoi sistemi — da aggiornamenti mirati a ricostruzioni complete — così il tuo software resta al passo con il tuo business.",
+          "Il tuo software è lento o datato? Lo modernizziamo in modo che funzioni meglio, senza interrompere le tue attività quotidiane.",
       },
       service2: {
-        title: "Sviluppo Software Personalizzato",
+        title: "Software Su Misura",
         description:
-          "Dall'idea alla produzione — progettiamo e costruiamo software su misura per le tue esigenze aziendali, con metodi AI-native.",
+          "Hai bisogno di qualcosa di specifico per la tua azienda? Costruiamo esattamente ciò che ti serve — da app a sistemi gestionali.",
       },
       service3: {
-        title: "Prototipazione Rapida",
+        title: "Prova la Tua Idea",
         description:
-          "Testa le tue idee velocemente. Trasformiamo la tua visione in un prototipo funzionante in giorni, non mesi — così puoi validare prima di investire.",
+          "Non sei sicuro che la tua idea funzionerà? Creiamo una demo funzionante in pochi giorni così puoi provarla prima di investire di più.",
       },
       service4: {
-        title: "Sviluppo Continuo e Supporto",
+        title: "Supporto Continuo",
         description:
-          "Il tuo software evolve con il tuo business. Miglioramenti continui, nuove funzionalità e supporto affidabile — siamo il tuo partner di sviluppo a lungo termine.",
+          "Non spartiamo dopo la consegna. Aggiornamenti, miglioramenti e aiuto quando ne hai bisogno — siamo qui a lungo termine.",
       },
     },
 
     // Process Section
     process: {
-      title: "AI in Ogni Fase",
-      description:
-        "Dal concept iniziale al deployment in produzione, l'AI migliora ogni passo del tuo percorso di sviluppo",
+      title: "Come Lavoriamo",
+      description: "Un processo semplice che ti tiene informato ad ogni passo. Nessuna sorpresa.",
       step1: {
-        title: "Obiettivi di Business Assistiti dall'AI",
+        title: "Obiettivi Assistiti dall'AI",
         description:
           "Analizziamo i tuoi obiettivi con l'AI per definire risultati chiari e misurabili allineati alla tua strategia aziendale.",
       },
@@ -208,62 +207,61 @@ export const translations = {
       },
       step3: {
         title: "Sviluppo AI-Native",
-        description:
-          "Il nostro approccio di programmazione agentica fornisce codice pronto per la produzione a velocità e qualità senza precedenti.",
+        description: "Il nostro approccio di programmazione agentica fornisce codice pronto per la produzione a velocità e qualità senza precedenti.",
       },
       step4: {
-        title: "Deploy e Iterazione",
-        description:
-          "La consegna continua con monitoraggio potenziato dall'AI assicura che il tuo software evolva con il tuo business.",
+        title: "Deploy & Iterazione",
+        description: "Consegna continua con monitoraggio AI assicura che il tuo software evolva con la tua azienda.",
       },
     },
 
     // Features Section
     features: {
-      title: "Il Vantaggio dell'AI",
-      description: "Capacità all'avanguardia che distinguono il tuo software",
+      title: "Perché Sceglierci",
+      description: "Vantaggi reali che fanno la differenza per la tua azienda",
       feature1: {
-        title: "Agenti Autonomi",
-        description: "Agenti AI che comprendono il contesto e prendono decisioni intelligenti durante tutto lo sviluppo.",
+        title: "Automazione Intelligente",
+        description: "Usiamo strumenti avanzati per lavorare più velocemente, così ottieni risultati prima senza sacrificare la qualità.",
       },
       feature2: {
-        title: "Qualità in Tempo Reale",
-        description: "Valutazione continua della qualità e correzioni automatiche prima che i problemi raggiungano la produzione.",
+        title: "Qualità Garantita",
+        description: "Testiamo tutto accuratamente prima della consegna. Il tuo software funziona in modo affidabile dal primo giorno.",
       },
       feature3: {
-        title: "Sicurezza Prima di Tutto",
-        description: "Scansione di sicurezza e verifica della conformità potenziate dall'AI integrate in ogni flusso di lavoro.",
+        title: "Sicuro e Protetto",
+        description: "I tuoi dati e quelli dei tuoi clienti restano al sicuro. La sicurezza è integrata, non aggiunta dopo.",
       },
       feature4: {
-        title: "Migrazione Senza Interruzioni",
-        description: "Preserva i tuoi dati mentre ricostruisci completamente con un'architettura moderna e scalabile.",
+        title: "Transizioni Facili",
+        description: "Stai cambiando software? Trasferiamo i tuoi dati in sicurezza e formiamo il tuo team sul nuovo sistema.",
       },
       feature5: {
-        title: "Linguaggio Naturale",
-        description: "Descrivi ciò che vuoi in linguaggio semplice e guarda l'AI tradurlo in codice funzionante.",
+        title: "Tu Decidi",
+        description: "Niente discorsi tecnici confusi. Spieghiamo tutto chiaramente e sei tu a prendere le decisioni.",
       },
       feature6: {
-        title: "Team Umani + AI",
-        description: "La collaborazione perfetta tra creatività umana ed efficienza dell'AI.",
+        title: "Persone Vere, Supporto Vero",
+        description: "Lavori direttamente con il nostro team. Rispondiamo alle tue chiamate e risolviamo i problemi velocemente.",
       },
     },
 
     // CTA Section
     cta: {
-      title: "Pronto a Lavorare con Esperti AI-Native?",
+      title: "Pronto per Iniziare?",
       description:
-        "Collabora con il team che costruisce software migliore, più velocemente. I tuoi competitor non stanno aspettando.",
+        "Raccontaci del tuo progetto. Ti daremo una valutazione onesta e un preventivo chiaro — senza impegno.",
+      button: "Parliamone",
     },
 
     // Footer
     footer: {
       description:
-        "Trasformiamo lo sviluppo software con tecnologie AI-native. Qualità superiore, consegne più rapide, più valore.",
+        "Software su misura per aziende in crescita. Processo semplice, prezzi giusti, risultati concreti.",
       servicesTitle: "Servizi",
-      legacyModernization: "Modernizzazione Legacy",
-      customDev: "Sviluppo Personalizzato",
-      prototyping: "Prototipazione Rapida",
-      ongoingSupport: "Supporto Continuo",
+      legacyModernization: "Aggiornamento Sistemi",
+      customDev: "Software Su Misura",
+      prototyping: "Demo Veloci",
+      ongoingSupport: "Supporto",
       companyTitle: "Azienda",
       about: "Chi Siamo",
       careers: "Lavora con Noi",

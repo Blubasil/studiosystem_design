@@ -1,13 +1,22 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Nunito, Roboto } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/lib/i18n/context"
 import { JsonLd } from "@/components/json-ld"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
+})
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font-title",
+})
 
 export const metadata: Metadata = {
   title: "Studio System | AI-Native Software Development",
@@ -51,7 +60,7 @@ export default function RootLayout({
       <head>
         <JsonLd />
       </head>
-      <body className={`font-sans antialiased`}>
+      <body className={`${nunito.variable} ${roboto.variable} antialiased`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

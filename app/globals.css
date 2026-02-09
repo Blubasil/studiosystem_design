@@ -3,7 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Updated to dark theme with black/white AI-focused palette */
+/* Dark theme with black background and white text */
 :root {
   --background: oklch(0.08 0 0);
   --foreground: oklch(0.98 0 0);
@@ -55,8 +55,8 @@
   --muted-foreground: oklch(0.65 0 0);
   --accent: oklch(0.25 0 0);
   --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.25 0 0);
   --input: oklch(0.18 0 0);
   --ring: oklch(0.5 0 0);
@@ -121,6 +121,356 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-white antialiased;
   }
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+}
+
+p,
+.body-lg,
+.body-md {
+  font-family: var(--font-body), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-lg,
+.section-title,
+.stat-number {
+  font-family: var(--font-title), sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: #000000;
+  background-image:
+    radial-gradient(1400px 700px at 20% -10%, rgba(255, 255, 255, 0.18), transparent 60%),
+    radial-gradient(1000px 600px at 85% 0%, rgba(255, 255, 255, 0.12), transparent 55%),
+    radial-gradient(800px 500px at 50% 110%, rgba(255, 255, 255, 0.06), transparent 60%);
+  background-attachment: fixed;
+}
+
+/* ============================================
+   GLASS DESIGN SYSTEM
+   Subtle glass, micro animations, sleek
+   ============================================ */
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* Typography */
+.heading-lg {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.body-lg {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.body-md {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.stat-title {
+  font-family: var(--font-title), sans-serif;
+  font-weight: 500;
+}
+
+/* Glass Card */
+.card {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(11px) saturate(125%);
+  -webkit-backdrop-filter: blur(11px) saturate(125%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 80% at 10% 0%, rgba(255, 255, 255, 0.18), transparent 55%);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.card h2,
+.card h3,
+.card p,
+.card span {
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card .icon-box {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card button {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+
+/* Glass Card Light */
+.card-glass {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(12px) saturate(125%);
+  -webkit-backdrop-filter: blur(12px) saturate(125%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 80% at 10% 0%, rgba(255, 255, 255, 0.18), transparent 55%);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.card-glass span {
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-glass .icon-box {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-glass:hover {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* Icon Box */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  flex-shrink: 0;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+  transition:
+    border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-box svg {
+  color: #000000 !important;
+  width: 22px;
+  height: 22px;
+}
+
+
+/* Section */
+.section {
+  padding: 120px 24px;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 72px;
+}
+
+/* Stat number */
+.stat-number {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+/* Step number */
+.step-number {
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.03);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  transition: color 0.3s ease;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+}
+
+.glow-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+/* Smooth section transitions */
+.section-fade {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Legacy compatibility */
+.card-pro { 
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(11px) saturate(125%);
+  -webkit-backdrop-filter: blur(11px) saturate(125%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-pro h3,
+.card-pro p,
+.card-pro span {
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-pro .icon-box {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-pro:hover {
+  border-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+/* CTA hover invert */
+.cta-card:hover {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.cta-card:hover h2,
+.cta-card:hover p,
+.cta-card:hover span {
+  color: #000000 !important;
+}
+
+.cta-card:hover button {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.cta-card:hover button svg {
+  color: #ffffff !important;
+}
+
+.card-bima {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.section-dark { background: #000; }
+.section-elevated { background: #030303; }
+
+.icon-glow {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.icon-glow svg {
+  color: #000000 !important;
+  width: 22px;
+  height: 22px;
+}
+.icon-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
 }

@@ -34,26 +34,28 @@ export function ProcessSection() {
   ]
 
   return (
-    <section id="process" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">{t.process.title}</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            {t.process.description}
-          </p>
+    <section
+      id="process"
+      className="relative py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#050505] to-black overflow-hidden"
+    >
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-[url('/hero3.jpg')] bg-cover bg-center opacity-85" />
+      </div>
+      <div className="relative z-10 max-w-6xl mx-auto">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6">{t.process.title}</h2>
+          <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed">{t.process.description}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="relative">
-              <div className="text-6xl font-bold text-border absolute -top-4 -left-2 select-none">{step.step}</div>
-              <div className="relative pt-8">
-                <div className="w-10 h-10 rounded-lg bg-foreground flex items-center justify-center mb-4">
-                  <step.icon className="w-5 h-5 text-background" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+            <div key={index} className="relative p-6 rounded-2xl transition-all duration-500 bg-white/[0.04] backdrop-blur-md hover:border hover:border-white/60">
+              <div className="text-6xl font-bold text-white/[0.06] mb-4">{step.step}</div>
+              <div className="w-14 h-14 bg-black border border-white/20 rounded-xl flex items-center justify-center mb-5">
+                <step.icon className="w-7 h-7 text-white" />
               </div>
+              <h3 className="text-base font-semibold text-white mb-3">{step.title}</h3>
+              <p className="text-sm text-white/50 leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
