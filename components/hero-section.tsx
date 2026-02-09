@@ -44,20 +44,20 @@ export function HeroSection() {
 
           {/* Feature cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto animate-fade-in-up delay-400">
-            <div className="flex items-center justify-center gap-3 py-4 px-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl mx-auto w-full max-w-sm sm:max-w-none">
-              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+            <div className="grid grid-cols-[48px_1fr] items-center gap-3 sm:flex sm:items-center sm:justify-center py-4 px-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl mx-auto w-full max-w-sm sm:max-w-none">
+              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center justify-self-center sm:justify-self-auto">
                 <Code2 className="w-5 h-5 text-black" />
               </div>
               <span className="text-sm text-white/80 font-medium whitespace-nowrap">{t.hero.feature1}</span>
             </div>
-            <div className="flex items-center justify-center gap-3 py-4 px-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl mx-auto w-full max-w-sm sm:max-w-none">
-              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+            <div className="grid grid-cols-[48px_1fr] items-center gap-3 sm:flex sm:items-center sm:justify-center py-4 px-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl mx-auto w-full max-w-sm sm:max-w-none">
+              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center justify-self-center sm:justify-self-auto">
                 <Cpu className="w-5 h-5 text-black" />
               </div>
               <span className="text-sm text-white/80 font-medium whitespace-nowrap">{t.hero.feature2}</span>
             </div>
-            <div className="flex items-center justify-center gap-3 py-4 px-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl mx-auto w-full max-w-sm sm:max-w-none">
-              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+            <div className="grid grid-cols-[48px_1fr] items-center gap-3 sm:flex sm:items-center sm:justify-center py-4 px-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl mx-auto w-full max-w-sm sm:max-w-none">
+              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center justify-self-center sm:justify-self-auto">
                 <Workflow className="w-5 h-5 text-black" />
               </div>
               <span className="text-sm text-white/80 font-medium whitespace-nowrap">{t.hero.feature3}</span>
