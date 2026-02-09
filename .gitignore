@@ -22,6 +22,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local design folder
+StudioSystem_Design/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
