@@ -39,7 +39,7 @@ export function ProcessSection() {
       className="relative py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#050505] to-black overflow-hidden"
     >
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/hero7.jpg')] bg-cover bg-center opacity-85" />
+        <div className="absolute inset-0 bg-[url('/hero7.jpg')] bg-cover bg-center opacity-85 [mask-image:linear-gradient(to_bottom,transparent_0%,black_50%,black_50%,transparent_100%)]" />
       </div>
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-20">
