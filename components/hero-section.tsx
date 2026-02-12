@@ -30,7 +30,7 @@ export function HeroSection() {
           </div>
 
           {/* Main heading */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-4 animate-fade-in-up delay-100">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-4 mt-[15px] sm:mt-0 animate-fade-in-up delay-100">
             {t.hero.title1}
           </h1>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white/30 leading-[1.1] tracking-tight mb-10 animate-fade-in-up delay-200">
