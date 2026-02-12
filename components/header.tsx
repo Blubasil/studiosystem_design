@@ -29,16 +29,16 @@ export function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="#services" className="text-sm text-white/60 hover:text-white transition-colors duration-300">
+            <Link href="#services" className="stat-title text-sm text-white/60 hover:text-white transition-colors duration-300">
               {t.header.services}
             </Link>
-            <Link href="#process" className="text-sm text-white/60 hover:text-white transition-colors duration-300">
+            <Link href="#process" className="stat-title text-sm text-white/60 hover:text-white transition-colors duration-300">
               {t.header.process}
             </Link>
-            <Link href="#features" className="text-sm text-white/60 hover:text-white transition-colors duration-300">
+            <Link href="#features" className="stat-title text-sm text-white/60 hover:text-white transition-colors duration-300">
               {t.header.features}
             </Link>
-            <Link href="#contact" className="text-sm text-white/60 hover:text-white transition-colors duration-300">
+            <Link href="#contact" className="stat-title text-sm text-white/60 hover:text-white transition-colors duration-300">
               {t.header.contact}
             </Link>
             <LanguageSwitcher />
@@ -55,16 +55,16 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-5 border-t border-white/[0.06] animate-fade-in">
             <nav className="flex flex-col gap-5">
-              <Link href="#services" className="text-white/60 hover:text-white transition-colors duration-300">
+              <Link href="#services" className="stat-title text-white/60 hover:text-white transition-colors duration-300">
                 {t.header.services}
               </Link>
-              <Link href="#process" className="text-white/60 hover:text-white transition-colors duration-300">
+              <Link href="#process" className="stat-title text-white/60 hover:text-white transition-colors duration-300">
                 {t.header.process}
               </Link>
-              <Link href="#features" className="text-white/60 hover:text-white transition-colors duration-300">
+              <Link href="#features" className="stat-title text-white/60 hover:text-white transition-colors duration-300">
                 {t.header.features}
               </Link>
-              <Link href="#contact" className="text-white/60 hover:text-white transition-colors duration-300">
+              <Link href="#contact" className="stat-title text-white/60 hover:text-white transition-colors duration-300">
                 {t.header.contact}
               </Link>
             </nav>

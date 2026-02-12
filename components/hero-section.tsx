@@ -22,7 +22,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(900px_500px_at_50%_10%,rgba(255,255,255,0.18),transparent_60%)] z-10" />
       
       <div className="relative z-20 w-full px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto pt-[20px] sm:pt-0">
           {/* Badge */}
           <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 mb-12 animate-fade-in-up">
             <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
