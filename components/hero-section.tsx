@@ -24,7 +24,7 @@ export function HeroSection() {
       <div className="relative z-20 w-full px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 mb-12 animate-fade-in-up">
+          <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 mb-12 animate-fade-in-up">
             <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
             <span className="text-sm text-white/70">{t.hero.badge}</span>
           </div>

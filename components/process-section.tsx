@@ -39,7 +39,7 @@ export function ProcessSection() {
       className="relative py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#050505] to-black overflow-hidden"
     >
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/hero3.jpg')] bg-cover bg-center opacity-85" />
+        <div className="absolute inset-0 bg-[url('/hero7.jpg')] bg-cover bg-center opacity-85" />
       </div>
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-20">
@@ -49,7 +49,7 @@ export function ProcessSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="relative p-6 rounded-2xl transition-all duration-500 bg-white/[0.04] backdrop-blur-md hover:border hover:border-white/60">
+            <div key={index} className="relative p-6 rounded-2xl transition-all duration-500 bg-white/[0.04] backdrop-blur-md border border-white/60">
               <div className="text-6xl font-bold text-white/[0.06] mb-4">{step.step}</div>
               <div className="w-14 h-14 bg-black border border-white/20 rounded-xl flex items-center justify-center mb-5">
                 <step.icon className="w-7 h-7 text-white" />
