@@ -34,7 +34,7 @@ export function StatsSection() {
                   {renderValue(stat.value)}
                 </span>
               </div>
-              <div className="stat-title text-xl sm:text-2xl font-bold mb-3 text-black/90">{stat.label}</div>
+              <div className="stat-title text-[22px] sm:text-[26px] font-extrabold mb-3 text-black/90">{stat.label}</div>
               <div className="text-sm text-black/50 leading-relaxed max-w-[200px] mx-auto">{stat.description}</div>
             </div>
           ))}
