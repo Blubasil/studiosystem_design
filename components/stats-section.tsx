@@ -30,7 +30,9 @@ export function StatsSection() {
           {stats.map((stat, index) => (
             <div key={index} className="text-center p-8 rounded-2xl hover:bg-black/[0.02] transition-colors duration-300">
               <div className="stat-title text-5xl sm:text-6xl font-bold mb-3 text-black flex items-center justify-center">
-                {renderValue(stat.value)}
+                <span className="inline-flex items-center justify-center h-12 sm:h-14 min-w-[56px] sm:min-w-[64px] px-3 rounded-full border border-black/80">
+                  {renderValue(stat.value)}
+                </span>
               </div>
               <div className="stat-title text-xl sm:text-2xl font-bold mb-3 text-black/90">{stat.label}</div>
               <div className="text-sm text-black/50 leading-relaxed max-w-[200px] mx-auto">{stat.description}</div>
