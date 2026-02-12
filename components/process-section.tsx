@@ -50,7 +50,7 @@ export function ProcessSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative p-6 rounded-2xl transition-all duration-500 bg-white/[0.04] backdrop-blur-md border border-white/60">
-              <div className="text-6xl font-bold text-white/[0.06] mb-4">{step.step}</div>
+              <div className="text-6xl font-bold text-white/[0.12] mb-4">{step.step}</div>
               <div className="w-14 h-14 bg-black border border-white/20 rounded-xl flex items-center justify-center mb-5">
                 <step.icon className="w-7 h-7 text-white" />
               </div>
