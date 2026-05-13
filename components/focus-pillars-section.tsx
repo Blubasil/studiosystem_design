@@ -10,6 +10,9 @@ const images = [
   { src: "/focus-pillar-legacy.png", key: "pillar2" as const, altKey: "imageAlt2" as const },
 ]
 
+/** Same footprint for every card: full card width, fixed aspect, no letterboxing (object-cover). */
+const MEDIA_ASPECT = "aspect-[4/5]"
+
 export function FocusPillarsSection() {
   const { t } = useLanguage()
   const fp = t.focusPillars
@@ -24,37 +27,44 @@ export function FocusPillarsSection() {
           <p className="text-lg text-white/50 leading-relaxed">{fp.description}</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-stretch">
           {images.map(({ src, key, altKey }) => {
             const pillar = fp[key]
             const isFeatured = key === "pillar3"
             return (
               <article
                 key={key}
-                className={`flex flex-col rounded-3xl overflow-hidden bg-white/[0.03] border ${
+                className={`relative flex h-full flex-col overflow-hidden rounded-3xl bg-white/[0.03] ${
                   isFeatured
-                    ? "lg:ring-2 lg:ring-teal-400/35 border-teal-400/25 shadow-[0_0_60px_-20px_rgba(20,184,166,0.35)]"
-                    : "border-white/10"
+                    ? "border border-teal-400/25 shadow-[0_0_60px_-20px_rgba(20,184,166,0.35)] lg:ring-2 lg:ring-teal-400/35"
+                    : "border border-white/10"
                 }`}
               >
-                <div className="relative aspect-[4/3] w-full bg-black/40">
+                {isFeatured && (
+                  <span className="pointer-events-none absolute right-3 top-3 z-20 max-w-[calc(100%-1.5rem)] truncate rounded-full border border-teal-400/40 bg-black/55 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-teal-200 shadow-lg backdrop-blur-md sm:right-4 sm:top-4 sm:text-[11px]">
+                    {fp.pillar3.badge}
+                  </span>
+                )}
+
+                <div
+                  className={`relative w-full shrink-0 overflow-hidden border-b border-white/[0.08] bg-zinc-950 ${MEDIA_ASPECT}`}
+                >
                   <Image
                     src={src}
                     alt={fp[altKey]}
                     fill
-                    className={key === "pillar3" ? "object-cover object-top" : "object-cover"}
+                    className="object-cover object-center"
                     sizes="(max-width: 1024px) 100vw, 33vw"
+                    priority={isFeatured}
                   />
                 </div>
-                <div className="flex flex-col flex-1 p-6 sm:p-8">
-                  {isFeatured && (
-                    <span className="inline-flex self-start mb-3 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-teal-500/15 text-teal-300 border border-teal-400/30">
-                      {fp.pillar3.badge}
-                    </span>
-                  )}
-                  <h3 className="text-xl font-semibold text-white mb-3">{pillar.title}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed flex-1 mb-4">{pillar.body}</p>
-                  <p className="text-sm text-teal-200/70 border-t border-white/10 pt-4 leading-relaxed">{pillar.example}</p>
+
+                <div className="flex flex-col p-6 sm:p-8">
+                  <h3 className="mb-3 text-xl font-semibold text-white">{pillar.title}</h3>
+                  <p className="mb-4 text-sm leading-relaxed text-white/50">{pillar.body}</p>
+                  <p className="border-t border-white/10 pt-4 text-sm leading-relaxed text-teal-200/70">
+                    {pillar.example}
+                  </p>
                 </div>
               </article>
             )
