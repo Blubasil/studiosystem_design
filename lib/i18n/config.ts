@@ -7,10 +7,10 @@
 
 export const i18nConfig = {
   /** Enable or disable the language switcher */
-  ENABLED: false,
+  ENABLED: true,
 
   /** Default language when i18n is disabled or for first-time visitors */
-  DEFAULT_LANGUAGE: "en" as const,
+  DEFAULT_LANGUAGE: "it" as const,
 }
 
 

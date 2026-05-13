@@ -19,17 +19,17 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "Studio System | AI-Native Software Development",
+  title: "Studio System | AI agents, apps, and legacy renewal",
   description:
-    "Struggling with slow delivery and legacy systems? Our AI-native approach modernizes your stack and accelerates development. Book a free strategy call.",
+    "Apps and websites that ship faster, legacy software renewed, and AI agents embedded in your everyday operations — from Padova, Italy.",
   metadataBase: new URL("https://www.studiosystem.io"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Studio System | AI-Native Software Development",
+    title: "Studio System | AI agents, apps, and legacy renewal",
     description:
-      "Struggling with slow delivery and legacy systems? Our AI-native approach modernizes your stack and accelerates development.",
+      "Tangible software: modern apps and sites, updated legacy systems, and AI agents that work inside your business.",
     url: "https://www.studiosystem.io",
     siteName: "Studio System",
     locale: "en_US",

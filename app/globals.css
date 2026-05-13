@@ -38,6 +38,11 @@
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.25 0 0);
   --sidebar-ring: oklch(0.5 0 0);
+  /* Teal neon accents — visible on real displays, still not “gamer RGB” */
+  --neon-teal: rgba(45, 212, 191, 0.38);
+  --neon-teal-border: rgba(45, 212, 191, 0.22);
+  --neon-teal-glow: rgba(20, 184, 166, 0.28);
+  --neon-teal-glow-strong: rgba(34, 211, 238, 0.42);
 }
 
 .dark {
@@ -153,7 +158,9 @@ body {
   background-image:
     radial-gradient(1400px 700px at 20% -10%, rgba(255, 255, 255, 0.18), transparent 60%),
     radial-gradient(1000px 600px at 85% 0%, rgba(255, 255, 255, 0.12), transparent 55%),
-    radial-gradient(800px 500px at 50% 110%, rgba(255, 255, 255, 0.06), transparent 60%);
+    radial-gradient(800px 500px at 50% 110%, rgba(255, 255, 255, 0.06), transparent 60%),
+    radial-gradient(1000px 520px at 50% 100%, var(--neon-teal-glow), transparent 52%),
+    radial-gradient(700px 480px at 0% 85%, rgba(45, 212, 191, 0.14), transparent 55%);
   background-attachment: fixed;
 }
 
@@ -241,7 +248,9 @@ body {
   padding: 32px;
   box-shadow:
     0 18px 48px rgba(0, 0, 0, 0.55),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 0 0 1px var(--neon-teal-border),
+    0 0 64px -24px var(--neon-teal-glow);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -270,8 +279,13 @@ body {
 }
 
 .card:hover {
-  border-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.85);
   transform: translateY(-2px);
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 0 0 1px rgba(45, 212, 191, 0.35),
+    0 0 72px -18px var(--neon-teal-glow-strong);
 }
 
 
@@ -288,7 +302,9 @@ body {
   border-radius: 16px;
   box-shadow:
     0 16px 40px rgba(0, 0, 0, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 0 0 1px var(--neon-teal-border),
+    0 0 56px -22px var(--neon-teal-glow);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -310,7 +326,12 @@ body {
 }
 
 .card-glass:hover {
-  border-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 0 0 1px rgba(45, 212, 191, 0.35),
+    0 0 64px -18px var(--neon-teal-glow-strong);
 }
 
 
@@ -338,6 +359,12 @@ body {
   height: 22px;
 }
 
+.icon-box:hover {
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(45, 212, 191, 0.45),
+    0 0 28px rgba(20, 184, 166, 0.28);
+}
 
 /* Section */
 .section {
@@ -371,12 +398,28 @@ body {
 /* Divider */
 .divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(45, 212, 191, 0.35),
+    rgba(255, 255, 255, 0.14),
+    rgba(45, 212, 191, 0.35),
+    transparent
+  );
+  box-shadow: 0 0 20px rgba(20, 184, 166, 0.18);
 }
 
 .glow-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(45, 212, 191, 0.4),
+    rgba(255, 255, 255, 0.16),
+    rgba(45, 212, 191, 0.4),
+    transparent
+  );
+  box-shadow: 0 0 22px rgba(20, 184, 166, 0.22);
 }
 
 /* Smooth section transitions */
@@ -392,7 +435,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   padding: 32px;
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.5),
+    0 0 0 1px var(--neon-teal-border),
+    0 0 60px -22px var(--neon-teal-glow);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-pro h3,
@@ -404,8 +450,38 @@ body {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-pro:hover {
-  border-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.85);
   transform: translateY(-2px);
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(45, 212, 191, 0.35),
+    0 0 68px -18px var(--neon-teal-glow-strong);
+}
+
+/* Process section glass cards — soft teal rim */
+.neon-process-card {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  box-shadow:
+    0 0 0 1px rgba(45, 212, 191, 0.32),
+    0 16px 48px -20px rgba(20, 184, 166, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.neon-process-card:hover {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  box-shadow:
+    0 0 0 1px rgba(45, 212, 191, 0.5),
+    0 20px 56px -16px rgba(20, 184, 166, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* Hero feature pills — whisper of teal */
+.hero-feature-pill {
+  border-color: rgba(45, 212, 191, 0.28) !important;
+  box-shadow:
+    0 0 0 1px rgba(45, 212, 191, 0.22),
+    0 0 52px -16px rgba(20, 184, 166, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 /* CTA hover invert */
@@ -472,5 +548,7 @@ body {
 }
 .icon-glow:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 8px 24px rgba(255, 255, 255, 0.12),
+    0 0 28px rgba(20, 184, 166, 0.32);
 }

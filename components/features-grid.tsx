@@ -40,7 +40,7 @@ export function FeaturesGrid() {
   ]
 
   return (
-    <section id="features" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-[#050505]">
+    <section id="features" className="scroll-mt-24 py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-[#050505]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6">{t.features.title}</h2>

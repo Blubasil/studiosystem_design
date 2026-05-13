@@ -1,14 +1,14 @@
 export const translations = {
   en: {
-    // Header
     header: {
-      services: "Services",
-      process: "How It Works",
-      features: "Why Us",
+      daily: "Everyday",
+      pillars: "What we do",
+      agent: "AI agents",
+      process: "How it works",
+      features: "Why us",
       contact: "Contact",
     },
 
-    // Hero Section
     hero: {
       badge: "AI-Native Software Development",
       title1: "We Build Better Software",
@@ -20,132 +20,181 @@ export const translations = {
       feature3: "Natural Language Dev",
     },
 
-    // Stats Section
+    dailyScenarios: {
+      title: "What we do, in plain language",
+      hook: "Every day at your company, the same kinds of situations repeat — but the details always change: a quote for Company A today, a payment reminder for Company B tomorrow, a supplier invoice with a new amount the day after. Specific work, real names and numbers, stacking up on the desk.",
+      closing:
+        "The pattern repeats; only the names and numbers change. That's where a digital teammate fits — not rigid scripts, but work that understands context.",
+      readMore: "Read the full picture",
+      readLess: "Show less",
+      long:
+        "Yesterday's automations ran fixed steps. An AI agent takes on real jobs: it understands what needs to happen, uses your systems — ERP, email, documents, the web — and finishes the outcome. When something is off-script — missing data, a price change, a new customer question — it handles it or asks the right person for confirmation. More than new software: it's new capacity. A digital team alongside yours, speaking your company's language, scaling when this month brings 500 orders instead of 200. Your people stay where they matter most; the new team handles the rest.",
+      scenario1: {
+        title: "Quote request",
+        line: "Someone figures what the client needs, runs numbers, writes the reply.",
+      },
+      scenario2: {
+        title: "Customer order",
+        line: "Someone checks stock, updates the customer on timing, prepares shipment.",
+      },
+      scenario3: {
+        title: "Supplier invoice",
+        line: "Someone matches it to what was ordered, books it, schedules payment.",
+      },
+      scenario4: {
+        title: "Overdue payment",
+        line: "Someone checks aging, drafts the reminder, decides whether to hold supply.",
+      },
+      scenario5: {
+        title: "Month-end",
+        line: "Someone gathers invoices, receipts, movements — everything tidy for the accountant.",
+      },
+      scenario6: {
+        title: "WhatsApp message",
+        line: "Someone answers fast: is it info, a booking, a complaint?",
+      },
+    },
+
+    focusPillars: {
+      title: "Three areas we focus on",
+      description:
+        "Modern customer-facing products, systems you already rely on, and the layer that ties it together — agents that work inside your business.",
+      pillar1: {
+        title: "Apps & websites — faster, smarter",
+        body: "We develop applications and sites with shorter delivery cycles and advanced capabilities — what we think of as app or site “2.0”: the features users expect today, without endless projects.",
+        example: "Example: customer portal with real-time status, built in weeks instead of quarters.",
+      },
+      pillar2: {
+        title: "Legacy software, updated",
+        body: "We renew what you already have: performance, integrations, maintainability — without throwing away what still runs your company.",
+        example: "Example: connect the old ERP to new channels without a risky big-bang replacement.",
+      },
+      pillar3: {
+        badge: "Our main focus",
+        title: "AI agents for your business",
+        body: "Like ChatGPT, but the work isn't left for you to copy-paste. The agent understands the task, uses your tools, and completes the outcome — or escalates when human judgment is needed.",
+        example: "Example: from “unpaid invoice” to drafted reminder and logged activity in your systems.",
+      },
+      imageAlt1: "Apps and websites",
+      imageAlt2: "Legacy modernization",
+      imageAlt3: "AI agents for operations",
+    },
+
+    agentExplainer: {
+      title: "What we put into your company",
+      lead: "You know ChatGPT: it answers questions, but you still do the work — copy, paste, write the email, update the system. An AI agent does that too, and more.",
+      chatTitle: "Chat-style AI",
+      chat1: "Great for drafting text and ideas.",
+      chat2: "You move information between tools by hand.",
+      chat3: "You stay responsible for every update in the ERP, inbox, or CRM.",
+      agentTitle: "An AI agent in your workflows",
+      agent1: "Understands the job end to end in your context.",
+      agent2: "Uses your systems: ERP, email, documents, web — not a separate island.",
+      agent3: "Delivers the outcome: logged, sent, scheduled — not just a suggestion.",
+      agent4: "When it's unusual, it acts or asks the right person — it doesn't freeze.",
+      workforceTitle: "More than software — new capacity",
+      workforce:
+        "A digital team next to yours. It works with your stack, speaks your company's language, and scales with peaks: 500 orders this month instead of 200 — it handles the volume. Your people stay on judgment, relationships, and strategy.",
+      automationNote:
+        "Old automation ran rigid steps. An agent takes on real work and understands what it's doing.",
+    },
+
     stats: {
-      stat1: { value: "2x", label: "Faster Results", description: "Your project delivered in half the time, so you can start growing sooner" },
-      stat2: { value: "↑", label: "Better Quality", description: "Reliable software that works smoothly from day one, fewer headaches for you" },
-      stat3: { value: "3x", label: "More Options", description: "We show you multiple solutions so you can choose what fits your business best" },
-      stat4: { value: "↓", label: "Lower Costs", description: "Smart technology means less manual work and more savings passed on to you" },
+      stat1: { value: "24/7", label: "Always on", description: "Agents don't sleep — they keep routine work moving while you focus elsewhere." },
+      stat2: { value: "1×", label: "Your systems", description: "We connect to what you already use; no fantasy parallel stack." },
+      stat3: { value: "∞", label: "Same playbook", description: "Quotes, orders, invoices, reminders — the pattern repeats; the agent adapts to each case." },
+      stat4: { value: "→", label: "Human when it counts", description: "Off-script cases go to the right person — with context attached." },
     },
 
-    // Services Section
-    services: {
-      title: "What We Do",
-      description: "Simple solutions for real business problems. No tech jargon, just results.",
-      service1: {
-        title: "Update Old Systems",
-        description:
-          "Is your software slow or outdated? We modernize it so it works better, without disrupting your daily operations.",
-      },
-      service2: {
-        title: "Custom Software",
-        description:
-          "Need something specific for your business? We build exactly what you need — from apps to management systems.",
-      },
-      service3: {
-        title: "Test Your Idea First",
-        description:
-          "Not sure if your idea will work? We create a working demo in days so you can try it before investing more.",
-      },
-      service4: {
-        title: "Ongoing Support",
-        description:
-          "We don't disappear after delivery. Updates, improvements, and help when you need it — we're here for the long run.",
-      },
-    },
-
-    // Process Section
     process: {
-      title: "How We Work",
-      description: "A simple process that keeps you informed at every step. No surprises.",
+      title: "How we work with you",
+      description: "From observing your desk to running alongside your team — transparent steps, no black box.",
       step1: {
-        title: "AI-Assisted Business Goals",
+        title: "We learn how you work",
         description:
-          "We analyze your objectives with AI to define clear, measurable outcomes aligned with your business strategy.",
+          "We sit with the jobs that pile up: who does what, which systems are touched, where things stall. No generic slide decks — your real process.",
       },
       step2: {
-        title: "Scope from Goals",
+        title: "We connect the stack",
         description:
-          "AI transforms your goals into detailed technical specifications, ensuring nothing gets lost in translation.",
+          "Integrations, APIs, secure access to email and documents: the agent gets safe paths into the tools your people already use.",
       },
       step3: {
-        title: "AI-Native Development",
-        description: "Our agentic programming approach delivers production-ready code at unprecedented speed and quality.",
+        title: "We ship software & agents",
+        description:
+          "Whether it's a renewed app, a legacy bridge, or the agent itself — we deliver in iterations you can try, not a year-long blind build.",
       },
       step4: {
-        title: "Deploy & Iterate",
-        description: "Continuous delivery with AI-powered monitoring ensures your software evolves with your business.",
+        title: "You hand off real tasks",
+        description:
+          "We tune with your team, set guardrails, and iterate from real traffic — until the desk is lighter and exceptions have a clear path.",
       },
     },
 
-    // Features Section
     features: {
-      title: "Why Choose Us",
-      description: "Real advantages that make a difference for your business",
+      title: "Why teams work with us",
+      description: "Practical trust: security, clarity, and people you can call.",
       feature1: {
-        title: "Smart Automation",
-        description: "We use advanced tools to work faster, so you get results sooner without sacrificing quality.",
+        title: "Understands the job",
+        description: "Agents are trained on how you work — not generic prompts — so outputs match your standards.",
       },
       feature2: {
-        title: "Quality Guaranteed",
-        description: "We test everything thoroughly before delivery. Your software works reliably from day one.",
+        title: "Doesn't freeze on edge cases",
+        description: "Missing codes, price changes, new questions: the agent handles or escalates with context.",
       },
       feature3: {
-        title: "Secure & Protected",
-        description: "Your data and your customers' data stay safe. Security is built in, not added later.",
+        title: "Secure by design",
+        description: "Access, logging, and data handling are built for business use — not consumer chat defaults.",
       },
       feature4: {
-        title: "Easy Transitions",
-        description: "Switching from old software? We move your data safely and train your team on the new system.",
+        title: "Scales with your peaks",
+        description: "Volume spikes don't mean hiring overnight — capacity grows with demand.",
       },
       feature5: {
-        title: "You Stay in Control",
-        description: "No confusing tech talk. We explain everything clearly and you make the decisions.",
+        title: "You stay in control",
+        description: "Clear approvals, audit trails, and plain-language settings — no mystery box.",
       },
       feature6: {
-        title: "Real People, Real Support",
-        description: "Work directly with our team. We answer your calls and solve problems quickly.",
+        title: "Real people beside you",
+        description: "We stay on for rollout, tuning, and when you need a human on the line.",
       },
     },
 
-    // CTA Section
     cta: {
-      title: "Ready to Get Started?",
+      title: "Tell us what's stacking up on your desk",
       description:
-        "Tell us about your project. We'll give you an honest assessment and a clear quote — no obligations.",
-      button: "Let's Talk",
+        "We'll listen, map the three areas (product, legacy, agents), and give you an honest next step — no obligation.",
+      button: "Let's talk",
     },
 
-    // Footer
     footer: {
       description:
-        "Custom software for growing businesses. Simple process, fair prices, real results.",
-      servicesTitle: "Services",
-      legacyModernization: "System Updates",
-      customDev: "Custom Software",
-      prototyping: "Quick Demos",
-      ongoingSupport: "Support",
+        "Apps & sites, legacy renewal, and AI agents that work inside your business — from Padova, for teams that want tangible results.",
+      servicesTitle: "On this page",
+      linkDaily: "Everyday examples",
+      linkPillars: "Three focus areas",
+      linkAgent: "AI agents",
       companyTitle: "Company",
       about: "About",
       careers: "Careers",
       contact: "Contact",
       blog: "Blog",
-      copyright: "© 2025 Studio System. All rights reserved.",
+      copyright: "© 2026 Studio System. All rights reserved.",
       privacy: "Privacy",
       terms: "Terms",
     },
   },
 
   it: {
-    // Header
     header: {
-      services: "Servizi",
-      process: "Come Funziona",
-      features: "Perché Noi",
+      daily: "Il quotidiano",
+      pillars: "Cosa facciamo",
+      agent: "Agenti AI",
+      process: "Come funziona",
+      features: "Perché noi",
       contact: "Contatti",
     },
 
-    // Hero Section
     hero: {
       badge: "Sviluppo Software AI-Native",
       title1: "Sviluppiamo Software Migliore",
@@ -157,117 +206,166 @@ export const translations = {
       feature3: "Linguaggio Naturale",
     },
 
-    // Stats Section
+    dailyScenarios: {
+      title: "Cosa facciamo, raccontato semplice",
+      hook: "Ogni giorno, nella tua azienda, si ripetono le stesse situazioni — ma i dettagli cambiano sempre: oggi un preventivo per la Rossi srl, domani un sollecito per la Bianchi spa, dopodomani la fattura del solito fornitore con un importo nuovo. Lavori specifici, con nomi e numeri, che si accumulano sulla scrivania.",
+      closing:
+        "Le situazioni si ripetono uguali; cambiano solo nomi e numeri. È lì che entra un compagno digitale — non passi rigidi, ma lavoro che capisce il contesto.",
+      readMore: "Leggi il quadro completo",
+      readLess: "Mostra meno",
+      long:
+        "Le automazioni di ieri eseguivano passaggi fissi. Un agente AI prende in carico i lavori veri: capisce cosa serve, usa i sistemi della tua azienda — gestionale, email, documenti, web — e porta a casa il risultato. Quando è fuori dall'ordinario — dato mancante, listino cambiato, domanda nuova del cliente — gestisce o chiede conferma a chi di dovere, con il contesto già pronto. Più che un nuovo software: è nuova capacità. Una squadra digitale accanto alla tua, che parla la lingua dell'azienda e cresce con i picchi: se questo mese arrivano 500 ordini invece di 200, ne gestisce 500. Le persone restano dove servono davvero; la nuova squadra si occupa del resto.",
+      scenario1: {
+        title: "Richiesta di preventivo",
+        line: "Qualcuno deve capire cosa serve al cliente, fare due conti, scrivere la risposta.",
+      },
+      scenario2: {
+        title: "Ordine cliente",
+        line: "Qualcuno deve controllare il magazzino, avvisare sui tempi, preparare la spedizione.",
+      },
+      scenario3: {
+        title: "Fattura fornitore",
+        line: "Qualcuno deve verificare che corrisponda all'ordine, registrarla, programmare il pagamento.",
+      },
+      scenario4: {
+        title: "Cliente che non ha pagato",
+        line: "Qualcuno controlla lo scaduto, prepara il sollecito, valuta se sospendere le forniture.",
+      },
+      scenario5: {
+        title: "Fine mese",
+        line: "Qualcuno raccoglie fatture, ricevute, movimenti — tutto in ordine per il commercialista.",
+      },
+      scenario6: {
+        title: "Messaggio su WhatsApp",
+        line: "Qualcuno risponde subito: informazioni, prenotazione o reclamo?",
+      },
+    },
+
+    focusPillars: {
+      title: "Tre leve per la tua PMI",
+      description:
+        "Portale e app per i clienti, sistemi che fate girare ogni giorno, e un livello che le unisce: agenti AI dentro l’ufficio — non sulla carta.",
+      pillar1: {
+        title: "App e siti che tengono il passo",
+        body: "Riduciamo i tempi di sviluppo e portiamo funzioni che oggi i clienti si aspettano subito: ordini, stato pratiche, self-service — senza progetti che non finiscono mai.",
+        example: "Esempio: area riservata con tracking ordini in tempo reale, online in poche settimane.",
+      },
+      pillar2: {
+        title: "Il gestionale «datato», ma affidabile",
+        body: "Modernizziamo ciò che già regge fatturazione, magazzino e amministrazione: più velocità, integrazioni pulite, meno rischi di uno spezzatutto.",
+        example: "Esempio: collegare il gestionale a e-commerce o corrieri senza fermare la cassa.",
+      },
+      pillar3: {
+        badge: "Il nostro focus",
+        title: "Agenti AI sul lavoro vero",
+        body: "Non una chat generica: un agente che legge mail e PDF, aggiorna il gestionale, prepara solleciti e risposte — e quando serve una firma umana, la chiede al ruolo giusto.",
+        example: "Esempio: da «fattura non incassata» a sollecito pronto e nota sul cliente, senza aprire dieci finestre.",
+      },
+      imageAlt1: "App e siti web",
+      imageAlt2: "Modernizzazione legacy",
+      imageAlt3: "Agenti AI operativi",
+    },
+
+    agentExplainer: {
+      title: "Cosa portiamo in azienda",
+      lead: "ChatGPT risponde alle domande: poi tocca a voi ricopiare dati, aggiornare il gestionale, mandare l’e-mail. Un agente AI lavora diversamente — capisce il compito, usa i sistemi che già avete e arriva all’esito; quando serve il giudizio umano, coinvolge la persona giusta.",
+      chatTitle: "L’AI «solo chat»",
+      chat1: "Utile per bozze, riassunti e prime idee.",
+      chat2: "I passaggi fra strumenti li fate ancora voi, a mano.",
+      chat3: "Restate voi responsabili di ogni modifica su ERP, posta e CRM.",
+      agentTitle: "Un agente AI nei vostri flussi",
+      agent1: "Affronta il compito per intero, nel contesto della vostra PMI.",
+      agent2: "Usa davvero gestionale, posta, documenti e web: non resta chiuso in una chat.",
+      agent3: "Consegna un risultato concreto: tracciato, inviato, programmato — non un promemoria generico.",
+      agent4: "Se il caso è atipico, procede o chiede a chi di competenza — non si blocca.",
+      workforceTitle: "Non solo software: più capacità operativa",
+      workforce:
+        "È una squadra digitale affiancata alla vostra: parla il linguaggio dell’azienda, lavora sugli strumenti che già usate e regge i picchi — cinquecento ordini questo mese invece di duecento, li smista tutti. Il team resta su relazioni, margini e decisioni.",
+      automationNote:
+        "Le vecchie automazioni erano passi fissi. L’agente gestisce lavori veri e sa cosa sta facendo.",
+    },
+
     stats: {
-      stat1: { value: "2x", label: "Più Veloce", description: "Il tuo progetto consegnato in metà tempo, così puoi iniziare a crescere prima" },
-      stat2: { value: "↑", label: "Più Qualità", description: "Software affidabile che funziona dal primo giorno, meno grattacapi per te" },
-      stat3: { value: "3x", label: "Più Opzioni", description: "Ti mostriamo più soluzioni così scegli quella giusta per la tua azienda" },
-      stat4: { value: "↓", label: "Meno Costi", description: "Tecnologia smart significa meno lavoro manuale e più risparmi per te" },
+      stat1: { value: "24/7", label: "Sempre in moto", description: "L’operatività ripetitiva avanza anche quando il team è sui clienti o in produzione." },
+      stat2: { value: "1×", label: "Sui vostri sistemi", description: "Niente doppioni: ci agganciamo a gestionale, posta e strumenti che già usate." },
+      stat3: { value: "∞", label: "Stesso copione", description: "Preventivi, ordini, fatture, solleciti: lo schema è noto; cambiano nomi e importi." },
+      stat4: { value: "→", label: "Umano quando serve", description: "I casi limite arrivano a chi decide — con note e storico già pronti." },
     },
 
-    // Services Section
-    services: {
-      title: "Cosa Facciamo",
-      description: "Soluzioni semplici per problemi reali. Niente gergo tecnico, solo risultati.",
-      service1: {
-        title: "Aggiorniamo i Vecchi Sistemi",
-        description:
-          "Il tuo software è lento o datato? Lo modernizziamo in modo che funzioni meglio, senza interrompere le tue attività quotidiane.",
-      },
-      service2: {
-        title: "Software Su Misura",
-        description:
-          "Hai bisogno di qualcosa di specifico per la tua azienda? Costruiamo esattamente ciò che ti serve — da app a sistemi gestionali.",
-      },
-      service3: {
-        title: "Prova la Tua Idea",
-        description:
-          "Non sei sicuro che la tua idea funzionerà? Creiamo una demo funzionante in pochi giorni così puoi provarla prima di investire di più.",
-      },
-      service4: {
-        title: "Supporto Continuo",
-        description:
-          "Non spartiamo dopo la consegna. Aggiornamenti, miglioramenti e aiuto quando ne hai bisogno — siamo qui a lungo termine.",
-      },
-    },
-
-    // Process Section
     process: {
-      title: "Come Lavoriamo",
-      description: "Un processo semplice che ti tiene informato ad ogni passo. Nessuna sorpresa.",
+      title: "Come lavoriamo con una PMI",
+      description: "Passi chiari, linguaggio da ufficio — niente scatola nera.",
       step1: {
-        title: "Obiettivi Assistiti dall'AI",
+        title: "Capiamo come lavorate davvero",
         description:
-          "Analizziamo i tuoi obiettivi con l'AI per definire risultati chiari e misurabili allineati alla tua strategia aziendale.",
+          "Ci sediamo sui compiti che si accumulano: chi fa cosa, quali schermate si aprono, dove si perde tempo. Slide generiche zero — solo il vostro modo di lavorare.",
       },
       step2: {
-        title: "Scope dagli Obiettivi",
+        title: "Colleghiamo ciò che già avete",
         description:
-          "L'AI trasforma i tuoi obiettivi in specifiche tecniche dettagliate, assicurando che nulla vada perso nella traduzione.",
+          "API, connettori, accessi controllati a posta e cartelle: l’agente entra dove servono dati veri, con tracciabilità.",
       },
       step3: {
-        title: "Sviluppo AI-Native",
-        description: "Il nostro approccio di programmazione agentica fornisce codice pronto per la produzione a velocità e qualità senza precedenti.",
+        title: "Consegniamo in iterazioni provabili",
+        description:
+          "App rinnovata, ponte sul gestionale o agente operativo: pezzi piccoli che potete provare, non un progetto chiuso a chiave per mesi.",
       },
       step4: {
-        title: "Deploy & Iterazione",
-        description: "Consegna continua con monitoraggio AI assicura che il tuo software evolva con la tua azienda.",
+        title: "Passate gradualmente i compiti",
+        description:
+          "Affiniamo con chi è in cassa o in amministrazione, mettiamo limiti chiari e miglioriamo sul traffico reale — finché la scrivania pesa meno.",
       },
     },
 
-    // Features Section
     features: {
-      title: "Perché Sceglierci",
-      description: "Vantaggi reali che fanno la differenza per la tua azienda",
+      title: "Perché le PMI ci scelgono",
+      description: "Sicurezza, chiarezza e qualcuno che risponde al telefono.",
       feature1: {
-        title: "Automazione Intelligente",
-        description: "Usiamo strumenti avanzati per lavorare più velocemente, così ottieni risultati prima senza sacrificare la qualità.",
+        title: "Impara dal vostro modo di lavorare",
+        description: "Niente prompt «universali»: l’agente segue procedure, moduli e controlli che già usate.",
       },
       feature2: {
-        title: "Qualità Garantita",
-        description: "Testiamo tutto accuratamente prima della consegna. Il tuo software funziona in modo affidabile dal primo giorno.",
+        title: "Non si ferma sui casi strani",
+        description: "Listini cambiati, codici mancanti, richieste fuori standard: gestisce o passa la palla con contesto.",
       },
       feature3: {
-        title: "Sicuro e Protetto",
-        description: "I tuoi dati e quelli dei tuoi clienti restano al sicuro. La sicurezza è integrata, non aggiunta dopo.",
+        title: "Pensato per l’uso in azienda",
+        description: "Accessi, log e dati trattati come in ufficio — non come in un’app consumer.",
       },
       feature4: {
-        title: "Transizioni Facili",
-        description: "Stai cambiando software? Trasferiamo i tuoi dati in sicurezza e formiamo il tuo team sul nuovo sistema.",
+        title: "Scala con i picchi",
+        description: "I picchi di volume non significano assumere domani mattina — la capacità cresce con la domanda.",
       },
       feature5: {
-        title: "Tu Decidi",
-        description: "Niente discorsi tecnici confusi. Spieghiamo tutto chiaramente e sei tu a prendere le decisioni.",
+        title: "Voi restate al comando",
+        description: "Approvazioni chiare, tracciabilità e impostazioni in linguaggio semplice — niente scatola nera.",
       },
       feature6: {
-        title: "Persone Vere, Supporto Vero",
-        description: "Lavori direttamente con il nostro team. Rispondiamo alle tue chiamate e risolviamo i problemi velocemente.",
+        title: "Persone vere accanto",
+        description: "Restiamo per il rollout, il tuning e quando serve una voce umana in linea.",
       },
     },
 
-    // CTA Section
     cta: {
-      title: "Pronto per Iniziare?",
+      title: "Parliamo della vostra scrivania",
       description:
-        "Raccontaci del tuo progetto. Ti daremo una valutazione onesta e un preventivo chiaro — senza impegno.",
-      button: "Parliamone",
+        "Raccontateci ordini, fatture e mail che vi rubano tempo: mappiamo app, gestionale e agenti, e vi diciamo se ha senso muoversi — senza impegno.",
+      button: "Fissiamo una chiamata",
     },
 
-    // Footer
     footer: {
       description:
-        "Software su misura per aziende in crescita. Processo semplice, prezzi giusti, risultati concreti.",
-      servicesTitle: "Servizi",
-      legacyModernization: "Aggiornamento Sistemi",
-      customDev: "Software Su Misura",
-      prototyping: "Demo Veloci",
-      ongoingSupport: "Supporto",
+        "App e siti per i clienti, gestionale aggiornato, agenti AI in ufficio — da Padova, con occhio alle PMI del Nord-Est e non solo.",
+      servicesTitle: "In questa pagina",
+      linkDaily: "Esempi quotidiani",
+      linkPillars: "Tre aree di focus",
+      linkAgent: "Agenti AI",
       companyTitle: "Azienda",
-      about: "Chi Siamo",
-      careers: "Lavora con Noi",
+      about: "Chi siamo",
+      careers: "Lavora con noi",
       contact: "Contatti",
       blog: "Blog",
-      copyright: "© 2025 Studio System. Tutti i diritti riservati.",
+      copyright: "© 2026 Studio System. Tutti i diritti riservati.",
       privacy: "Privacy",
       terms: "Termini",
     },
@@ -275,12 +373,4 @@ export const translations = {
 } as const
 
 export type Language = keyof typeof translations
-export type Translations = typeof translations.en
-
-
-
-
-
-
-
-
+export type Translations = (typeof translations)[Language]

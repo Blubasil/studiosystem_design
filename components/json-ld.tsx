@@ -6,7 +6,7 @@ export function JsonLd() {
     url: "https://www.studiosystem.io",
     logo: "https://www.studiosystem.io/android-chrome-512x512.png",
     description:
-      "AI-native software development studio specializing in legacy modernization, SDLC automation, and AI-powered development solutions.",
+      "Software studio building faster apps and websites, legacy modernization, and business AI agents integrated with your systems.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Padova",
@@ -32,7 +32,7 @@ export function JsonLd() {
     name: "Studio System",
     url: "https://www.studiosystem.io",
     description:
-      "AI-Native Software Development - Transform your software development with AI-native technologies.",
+      "Studio System — AI agents, bespoke apps and websites, and legacy renewal for growing businesses.",
     publisher: {
       "@type": "Organization",
       name: "Studio System",
@@ -46,7 +46,7 @@ export function JsonLd() {
     image: "https://www.studiosystem.io/android-chrome-512x512.png",
     url: "https://www.studiosystem.io",
     description:
-      "AI-native software development studio offering legacy modernization, SDLC automation, and custom AI solutions.",
+      "Professional software services: modern customer-facing products, legacy updates, and AI agents for operations.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Padova",
