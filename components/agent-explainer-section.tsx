@@ -13,11 +13,11 @@ export function AgentExplainerSection() {
   return (
     <section id="agent" className="scroll-mt-24 border-t border-white/[0.06] bg-black py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <header className="mx-auto mb-14 max-w-2xl text-center sm:mb-20">
-          <h2 className="text-balance text-3xl font-semibold tracking-[-0.02em] text-white sm:text-4xl md:text-[2.65rem] md:leading-[1.08]">
+        <header className="mx-auto mb-14 max-w-3xl text-center sm:mb-20">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl mb-6">
             {a.title}
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-pretty text-[15px] leading-relaxed text-white/50 sm:text-base">
+          <p className="mx-auto max-w-xl text-pretty text-lg leading-relaxed text-white/50">
             {a.lead}
           </p>
         </header>
@@ -71,10 +71,10 @@ export function AgentExplainerSection() {
         <div className="relative mt-10 overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-br from-white/[0.1] via-white/[0.04] to-transparent px-8 py-10 shadow-[0_24px_64px_-32px_rgba(0,0,0,0.85)] backdrop-blur-xl sm:mt-12 sm:px-11 sm:py-12">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_80%_at_10%_0%,rgba(255,255,255,0.12),transparent_55%)] opacity-40" />
           <div className="relative">
-            <h3 className="text-center text-[17px] font-semibold tracking-[-0.02em] text-white sm:text-[1.125rem]">
+            <h3 className="text-balance text-center text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
               {a.workforceTitle}
             </h3>
-            <p className="mx-auto mt-5 max-w-2xl text-center text-pretty text-[15px] leading-[1.65] text-white/60">
+            <p className="mx-auto mt-8 max-w-2xl text-center text-pretty text-base leading-relaxed text-white/60 sm:text-lg">
               {a.workforce}
             </p>
             <div className="mx-auto mt-9 max-w-xl border-t border-white/[0.12] pt-9">

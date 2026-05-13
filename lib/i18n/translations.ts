@@ -81,7 +81,7 @@ export const translations = {
     },
 
     agentExplainer: {
-      title: "What we put into your company",
+      title: "When the reply isn't enough",
       lead: "You know ChatGPT: it answers questions, but you still do the work — copy, paste, write the email, update the system. An AI agent does that too, and more.",
       chatTitle: "Chat-style AI",
       chat1: "Great for drafting text and ideas.",
@@ -92,7 +92,7 @@ export const translations = {
       agent2: "Uses your systems: ERP, email, documents, web — not a separate island.",
       agent3: "Delivers the outcome: logged, sent, scheduled — not just a suggestion.",
       agent4: "When it's unusual, it acts or asks the right person — it doesn't freeze.",
-      workforceTitle: "More than software — new capacity",
+      workforceTitle: "Your company 2.0",
       workforce:
         "A digital team next to yours. It works with your stack, speaks your company's language, and scales with peaks: 500 orders this month instead of 200 — it handles the volume. Your people stay on judgment, relationships, and strategy.",
       automationNote:
@@ -267,7 +267,7 @@ export const translations = {
     },
 
     agentExplainer: {
-      title: "Cosa portiamo in azienda",
+      title: "Quando la risposta non basta",
       lead: "ChatGPT risponde alle domande: poi tocca a voi ricopiare dati, aggiornare il gestionale, mandare l’e-mail. Un agente AI lavora diversamente — capisce il compito, usa i sistemi che già avete e arriva all’esito; quando serve il giudizio umano, coinvolge la persona giusta.",
       chatTitle: "L’AI «solo chat»",
       chat1: "Utile per bozze, riassunti e prime idee.",
@@ -278,7 +278,7 @@ export const translations = {
       agent2: "Usa davvero gestionale, posta, documenti e web: non resta chiuso in una chat.",
       agent3: "Consegna un risultato concreto: tracciato, inviato, programmato — non un promemoria generico.",
       agent4: "Se il caso è atipico, procede o chiede a chi di competenza — non si blocca.",
-      workforceTitle: "Non solo software: più capacità operativa",
+      workforceTitle: "La vostra azienda 2.0",
       workforce:
         "È una squadra digitale affiancata alla vostra: parla il linguaggio dell’azienda, lavora sugli strumenti che già usate e regge i picchi — cinquecento ordini questo mese invece di duecento, li smista tutti. Il team resta su relazioni, margini e decisioni.",
       automationNote:

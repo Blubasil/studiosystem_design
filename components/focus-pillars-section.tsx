@@ -10,7 +10,7 @@ const images = [
   { src: "/focus-pillar-legacy.png", key: "pillar2" as const, altKey: "imageAlt2" as const },
 ]
 
-/** Same footprint for every card: full card width, fixed aspect, no letterboxing (object-cover). */
+/** Same footprint every card; mobile uses object-contain so all artwork stays visible, desktop uses cover. */
 const MEDIA_ASPECT = "aspect-[4/5]"
 
 export function FocusPillarsSection() {
@@ -28,16 +28,20 @@ export function FocusPillarsSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-stretch">
-          {images.map(({ src, key, altKey }) => {
+          {images.map(({ src, key, altKey }, index) => {
             const pillar = fp[key]
             const isFeatured = key === "pillar3"
+            const isFirst = index === 0
+            const isLast = index === images.length - 1
             return (
               <article
                 key={key}
                 className={`relative flex h-full flex-col overflow-hidden rounded-3xl bg-white/[0.03] ${
                   isFeatured
                     ? "border border-teal-400/25 shadow-[0_0_60px_-20px_rgba(20,184,166,0.35)] lg:ring-2 lg:ring-teal-400/35"
-                    : "border border-white/10"
+                    : isFirst || isLast
+                      ? "border border-white"
+                      : "border border-white/10"
                 }`}
               >
                 {isFeatured && (
@@ -53,7 +57,7 @@ export function FocusPillarsSection() {
                     src={src}
                     alt={fp[altKey]}
                     fill
-                    className="object-cover object-center"
+                    className="object-contain object-center lg:object-cover lg:object-center"
                     sizes="(max-width: 1024px) 100vw, 33vw"
                     priority={isFeatured}
                   />
