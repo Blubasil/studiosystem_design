@@ -75,7 +75,8 @@ export const translations = {
         body: "Like ChatGPT, but the work isn't left for you to copy-paste. The agent understands the task, uses your tools, and completes the outcome — or escalates when human judgment is needed.",
         example: "Example: from “unpaid invoice” to drafted reminder and logged activity in your systems.",
       },
-      imageAlt1: "Apps and websites",
+      imageAlt1:
+        "Three translucent teal glass tiles — modern apps and customer websites, glassmorphism style on a dark background",
       imageAlt2:
         "Abstract 3D circular arrows — sync and continuous improvement, representing legacy systems modernization and iterative delivery",
       imageAlt3:
@@ -263,7 +264,8 @@ export const translations = {
         body: "Non una chat generica: un agente che legge mail e PDF, aggiorna il gestionale, prepara solleciti e risposte — e quando serve una firma umana, la chiede al ruolo giusto.",
         example: "Esempio: da «fattura non incassata» a sollecito pronto e nota sul cliente, senza aprire dieci finestre.",
       },
-      imageAlt1: "App e siti web",
+      imageAlt1:
+        "Tre piastrelle di vetro teal traslucide — app e siti web moderni per i clienti, stile glassmorphism su sfondo scuro",
       imageAlt2:
         "Frecce circolari 3D astratte — sincronizzazione e miglioramento continuo, simbolo di modernizzazione del gestionale e consegna iterativa",
       imageAlt3:
