@@ -77,7 +77,8 @@ export const translations = {
       },
       imageAlt1: "Apps and websites",
       imageAlt2: "Legacy modernization",
-      imageAlt3: "AI agents for operations",
+      imageAlt3:
+        "Professional team representing AI agents — three experts in black uniforms with teal accents against a dark background",
     },
 
     agentExplainer: {
@@ -263,7 +264,8 @@ export const translations = {
       },
       imageAlt1: "App e siti web",
       imageAlt2: "Modernizzazione legacy",
-      imageAlt3: "Agenti AI operativi",
+      imageAlt3:
+        "Team di esperti che rappresenta gli agenti AI — tre professionisti con uniformi nere e dettagli teal su sfondo scuro",
     },
 
     agentExplainer: {
