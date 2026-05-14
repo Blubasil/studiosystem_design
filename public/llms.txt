@@ -1,0 +1,29 @@
+# Studio System
+
+> Padova-based software studio: AI-native development — customer apps and websites, dependable legacy and ERP modernization, and operational AI agents that run inside your stack (ERP, email, documents), not only in a chat window.
+
+## What we do
+
+- Ship modern web and client-facing applications with shorter, measurable delivery cycles.
+- Renew and integrate legacy systems (billing, inventory, admin) without always replacing the ERP.
+- Deploy AI agents that complete real operational work with logging, approvals, and human escalation when judgment is needed.
+
+## Who we work with
+
+Small and mid-sized businesses (especially in Italy): quotes, orders, invoices, payment reminders, month-end routines, and the “desk work” patterns that repeat with different names and numbers each time.
+
+## Languages
+
+- Italian homepage: /
+- English homepage: /en
+
+Set the public site URL to your production domain (e.g. via NEXT_PUBLIC_SITE_URL on Vercel) so Open Graph, JSON-LD, sitemap, and robots use consistent absolute links.
+
+## Site map
+
+- /sitemap.xml
+- /robots.txt
+
+## Contact
+
+Use the on-page “Contatti” / “Contact” section and CTA to reach the team.

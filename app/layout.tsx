@@ -1,9 +1,9 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Nunito, Roboto } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/lib/i18n/context"
-import { JsonLd } from "@/components/json-ld"
+import { getSiteUrl } from "@/lib/site-url"
 import "./globals.css"
 
 const nunito = Nunito({
@@ -18,22 +18,17 @@ const roboto = Roboto({
   variable: "--font-title",
 })
 
+const siteUrl = getSiteUrl()
+
+/** Global defaults; each route exports its own title, description, OG, and JSON-LD. */
 export const metadata: Metadata = {
-  title: "Studio System | AI agents, apps, and legacy renewal",
-  description:
-    "Apps and websites that ship faster, legacy software renewed, and AI agents embedded in your everyday operations — from Padova, Italy.",
-  metadataBase: new URL("https://www.studiosystem.io"),
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "Studio System | AI agents, apps, and legacy renewal",
-    description:
-      "Tangible software: modern apps and sites, updated legacy systems, and AI agents that work inside your business.",
-    url: "https://www.studiosystem.io",
-    siteName: "Studio System",
-    locale: "en_US",
-    type: "website",
+  metadataBase: new URL(siteUrl),
+  applicationName: "Studio System",
+  referrer: "strict-origin-when-cross-origin",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
   icons: {
     icon: [
@@ -50,16 +45,22 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <JsonLd />
-      </head>
+    <html lang="it" suppressHydrationWarning>
       <body className={`${nunito.variable} ${roboto.variable} antialiased`}>
         <LanguageProvider>
           {children}

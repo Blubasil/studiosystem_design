@@ -1,30 +1,34 @@
 import type { MetadataRoute } from "next"
+import { getSiteUrl } from "@/lib/site-url"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.studiosystem.io"
+  const base = getSiteUrl()
+  const now = new Date()
 
-  // Core pages
-  const routes = [
+  return [
     {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 1.0,
+      url: base,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1,
+      alternates: {
+        languages: {
+          "it-IT": `${base}/`,
+          "en-US": `${base}/en`,
+        },
+      },
     },
     {
-      url: `${baseUrl}/en`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
+      url: `${base}/en`,
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.9,
+      alternates: {
+        languages: {
+          "it-IT": `${base}/`,
+          "en-US": `${base}/en`,
+        },
+      },
     },
-    // TODO: Add Italian version when ready
-    // {
-    //   url: `${baseUrl}/it`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "weekly" as const,
-    //   priority: 1.0,
-    // },
   ]
-
-  return routes
 }
