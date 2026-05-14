@@ -6,11 +6,14 @@ import { useLanguage } from "@/lib/i18n/context"
 /** Bump ?v= when replacing `public/focus-pillar-agents.png` so browsers/CDNs fetch the new file. */
 const AGENTS_PILLAR_IMAGE = "/focus-pillar-agents.png?v=3"
 
+/** Bump ?v= when replacing `public/focus-pillar-legacy.png` so browsers/CDNs fetch the new file. */
+const LEGACY_PILLAR_IMAGE = "/focus-pillar-legacy.png?v=2"
+
 /** Visual order: Apps | AI agents (featured) | Legacy */
 const images = [
   { src: "/focus-pillar-apps.png", key: "pillar1" as const, altKey: "imageAlt1" as const },
   { src: AGENTS_PILLAR_IMAGE, key: "pillar3" as const, altKey: "imageAlt3" as const },
-  { src: "/focus-pillar-legacy.png", key: "pillar2" as const, altKey: "imageAlt2" as const },
+  { src: LEGACY_PILLAR_IMAGE, key: "pillar2" as const, altKey: "imageAlt2" as const },
 ]
 
 /** Same footprint every card; object-cover at all breakpoints so mobile matches desktop framing. */

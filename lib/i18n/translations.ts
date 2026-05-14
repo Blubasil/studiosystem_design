@@ -76,7 +76,8 @@ export const translations = {
         example: "Example: from “unpaid invoice” to drafted reminder and logged activity in your systems.",
       },
       imageAlt1: "Apps and websites",
-      imageAlt2: "Legacy modernization",
+      imageAlt2:
+        "Abstract 3D circular arrows — sync and continuous improvement, representing legacy systems modernization and iterative delivery",
       imageAlt3:
         "Professional team representing AI agents — three experts in black uniforms with teal accents against a dark background",
     },
@@ -263,7 +264,8 @@ export const translations = {
         example: "Esempio: da «fattura non incassata» a sollecito pronto e nota sul cliente, senza aprire dieci finestre.",
       },
       imageAlt1: "App e siti web",
-      imageAlt2: "Modernizzazione legacy",
+      imageAlt2:
+        "Frecce circolari 3D astratte — sincronizzazione e miglioramento continuo, simbolo di modernizzazione del gestionale e consegna iterativa",
       imageAlt3:
         "Team di esperti che rappresenta gli agenti AI — tre professionisti con uniformi nere e dettagli teal su sfondo scuro",
     },
