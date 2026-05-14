@@ -1,6 +1,6 @@
 "use client"
 
-import { MessageSquare, Bot } from "lucide-react"
+import { Sparkles, Bot } from "lucide-react"
 import { useLanguage } from "@/lib/i18n/context"
 
 export function AgentExplainerSection() {
@@ -25,11 +25,11 @@ export function AgentExplainerSection() {
         <div className="grid gap-4 sm:gap-5 lg:grid-cols-2 lg:items-stretch lg:gap-6">
           {/* Light cards: white surface, black typography */}
           <article className="flex min-h-[22rem] flex-col rounded-2xl border border-black/[0.08] bg-white p-8 shadow-[0_1px_0_rgba(0,0,0,0.04)] sm:min-h-[24rem] sm:p-9">
-            <div className="mb-8 flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-black/[0.05]">
-                <MessageSquare className="h-6 w-6 text-black/75" strokeWidth={2} />
+            <div className="mb-8 flex items-center gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-black">
+                <Sparkles className="h-6 w-6 text-white" strokeWidth={2} aria-hidden />
               </div>
-              <h3 className="min-w-0 pt-0.5 text-xl font-bold leading-tight tracking-[-0.02em] text-black sm:text-2xl">
+              <h3 className="min-w-0 text-xl font-bold leading-tight tracking-[-0.02em] text-black sm:text-2xl">
                 {a.chatTitle}
               </h3>
             </div>
@@ -46,11 +46,11 @@ export function AgentExplainerSection() {
           </article>
 
           <article className="flex min-h-[22rem] flex-col rounded-2xl border border-black/[0.08] bg-white p-8 shadow-[inset_3px_0_0_0_#54FFC9,0_1px_0_rgba(0,0,0,0.04)] sm:min-h-[24rem] sm:p-9">
-            <div className="mb-8 flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-black/[0.08] bg-black/[0.04]">
-                <Bot className="h-6 w-6 text-black/85" strokeWidth={2} />
+            <div className="mb-8 flex items-center gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-black">
+                <Bot className="h-6 w-6 text-white" strokeWidth={2} aria-hidden />
               </div>
-              <h3 className="min-w-0 pt-0.5 text-xl font-bold leading-tight tracking-[-0.02em] text-black sm:text-2xl">
+              <h3 className="min-w-0 text-xl font-bold leading-tight tracking-[-0.02em] text-black sm:text-2xl">
                 {a.agentTitle}
               </h3>
             </div>

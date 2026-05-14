@@ -18,14 +18,14 @@ export function StatsSection() {
   const symbolFont = "clamp(2.53125rem, 6.3vw, 3.09375rem)"
 
   return (
-    <section className="py-28 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-36 px-4 sm:px-6 sm:py-44 lg:py-48 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div key={index} className="text-center p-8 rounded-2xl hover:bg-black/[0.02] transition-colors duration-300">
-              <div className="mb-3 flex justify-center pb-1">
+              <div className="mb-8 flex justify-center sm:mb-10">
                 <div
-                  className="inline-flex min-h-[4.5rem] min-w-[12rem] max-w-full shrink-0 items-center justify-center rounded-full border border-black/80 bg-white px-5 py-3 sm:min-h-[5.25rem] sm:min-w-[13rem] sm:px-6 sm:py-3.5"
+                  className="inline-flex min-h-[4.5rem] min-w-[12rem] max-w-full shrink-0 items-center justify-center rounded-full border border-white/35 bg-black px-5 py-3 sm:min-h-[5.25rem] sm:min-w-[13rem] sm:px-6 sm:py-3.5"
                   style={{
                     boxShadow: `0 10px 28px -6px rgba(${TEAL_NEON}, 0.55), 0 18px 44px -10px rgba(${TEAL_NEON}, 0.35), 0 4px 12px -2px rgba(${TEAL_NEON}, 0.25)`,
                   }}
@@ -34,7 +34,7 @@ export function StatsSection() {
                   <div className="flex h-full min-h-[2.25rem] w-full min-w-0 flex-1 items-center justify-center">
                     {stat.value === "∞" ? (
                       <span
-                        className="inline-flex items-center justify-center text-black"
+                        className="inline-flex items-center justify-center text-white"
                         style={{ fontSize: symbolFont, lineHeight: 1 }}
                       >
                         <span className="sr-only">∞</span>
@@ -46,7 +46,7 @@ export function StatsSection() {
                       </span>
                     ) : stat.value === "→" ? (
                       <span
-                        className="inline-flex items-center justify-center text-black"
+                        className="inline-flex items-center justify-center text-white"
                         style={{ fontSize: symbolFont, lineHeight: 1 }}
                       >
                         <span className="sr-only">→</span>
@@ -58,7 +58,7 @@ export function StatsSection() {
                       </span>
                     ) : (
                       <span
-                        className="stat-title text-center font-bold leading-none tracking-tight text-black tabular-nums [font-feature-settings:'tnum'] [line-height:1]"
+                        className="stat-title text-center font-bold leading-none tracking-tight text-white tabular-nums [font-feature-settings:'tnum'] [line-height:1]"
                         style={{ fontSize: baseFont }}
                       >
                         {stat.value}

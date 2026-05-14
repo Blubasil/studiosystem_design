@@ -207,7 +207,7 @@ export const translations = {
     },
 
     dailyScenarios: {
-      title: "Cosa facciamo, raccontato semplice",
+      title: "I nostri servizi, spiegati chiaramente.",
       hook: "Ogni giorno, nella tua azienda, si ripetono le stesse situazioni — ma i dettagli cambiano sempre: oggi un preventivo per la Rossi srl, domani un sollecito per la Bianchi spa, dopodomani la fattura del solito fornitore con un importo nuovo. Lavori specifici, con nomi e numeri, che si accumulano sulla scrivania.",
       closing:
         "Le situazioni si ripetono uguali; cambiano solo nomi e numeri. È lì che entra un compagno digitale — non passi rigidi, ma lavoro che capisce il contesto.",

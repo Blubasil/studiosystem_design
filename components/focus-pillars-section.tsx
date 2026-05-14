@@ -10,7 +10,7 @@ const images = [
   { src: "/focus-pillar-legacy.png", key: "pillar2" as const, altKey: "imageAlt2" as const },
 ]
 
-/** Same footprint every card; mobile uses object-contain so all artwork stays visible, desktop uses cover. */
+/** Same footprint every card; object-cover at all breakpoints so mobile matches desktop framing. */
 const MEDIA_ASPECT = "aspect-[4/5]"
 
 export function FocusPillarsSection() {
@@ -57,7 +57,7 @@ export function FocusPillarsSection() {
                     src={src}
                     alt={fp[altKey]}
                     fill
-                    className="object-contain object-center lg:object-cover lg:object-center"
+                    className="object-cover object-center"
                     sizes="(max-width: 1024px) 100vw, 33vw"
                     priority={isFeatured}
                   />

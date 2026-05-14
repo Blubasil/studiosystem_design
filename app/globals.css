@@ -335,18 +335,18 @@ body {
 }
 
 
-/* Icon Box */
+/* Icon Box (features grid: black tile + white glyph, matches pill / agent icon treatment) */
 .icon-box {
   width: 48px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
-  border-radius: 12px;
+  background: #000000;
+  border-radius: 16px;
   flex-shrink: 0;
-  border: 1px solid transparent;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
   transition:
     border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
     background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
@@ -354,14 +354,14 @@ body {
 }
 
 .icon-box svg {
-  color: #000000 !important;
+  color: #ffffff !important;
   width: 22px;
   height: 22px;
 }
 
 .icon-box:hover {
   box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.04),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
     0 0 0 1px rgba(45, 212, 191, 0.45),
     0 0 28px rgba(20, 184, 166, 0.28);
 }

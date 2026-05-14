@@ -49,12 +49,21 @@ export function FeaturesGrid() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((feature, index) => (
-            <div key={index} className="card p-7">
-              <div className="icon-box mb-6">
-                <feature.icon className="w-6 h-6" />
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-3xl border border-black/[0.08] bg-gradient-to-br from-white from-[8%] via-[#f0fdf7] via-[45%] to-[#8ee4c8] p-8 shadow-[0_16px_44px_-14px_rgba(0,0,0,0.45)] transition-all duration-300 hover:border-black/12 hover:shadow-[0_22px_52px_-14px_rgba(0,0,0,0.5)]"
+            >
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 bg-[radial-gradient(100%_80%_at_0%_0%,rgba(255,255,255,0.45),transparent_50%)]"
+              />
+              <div className="relative">
+                <div className="icon-box mb-8">
+                  <feature.icon className="w-6 h-6" />
+                </div>
+                <h3 className="mb-3 text-lg font-semibold leading-snug text-black">{feature.title}</h3>
+                <p className="text-sm leading-relaxed text-black/60">{feature.description}</p>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-3">{feature.title}</h3>
-              <p className="text-sm text-white/50 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
